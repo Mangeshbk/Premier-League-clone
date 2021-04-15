@@ -154,7 +154,7 @@ function headerSec() {
           <button>Social</button>
           <button>Youth</button>
           <button>Safeguarding</button>
-          <button style="margin-left: 200px; text-decoration:none" id="btn13">More</button>
+          <button style="margin-left: 100px; text-decoration:none" id="btn13"><span>&#8942;</span> &nbsp;More</button>
         </div>
       </div>
     </div>
