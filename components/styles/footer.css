@@ -1,0 +1,132 @@
+* {
+  font-family: PremierSans-Regular, Arial, Helvetica Neue, Helvetica, sans-serif;
+  margin: 0%;
+  padding: 0%;
+}
+#container {
+  bottom: 20px;
+}
+div > #footer {
+  margin: auto;
+  margin-top: 50px;
+  line-height: 35px;
+  height: 500px;
+  background-color: #37003c;
+  background-image: url("https://www.premierleague.com/resources/prod/3a85d04-3470/i/bg-elements/pl-footer-m-bottom.svg");
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 250px;
+}
+li {
+  font-size: 14px;
+  cursor: pointer;
+  color: #ffffff;
+}
+h3 {
+  font-size: 19px;
+  color: #ffffff;
+}
+li:hover {
+  color: #ff2882;
+}
+
+#listing {
+  display: flex;
+  flex-direction: row;
+  margin-left: 70px;
+}
+ul {
+  line-height: 30px;
+}
+#ul1 {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#ul2 {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 250px;
+}
+#listitem {
+  padding-top: 20px;
+  width: 200px;
+}
+
+#footer1 {
+  height: 50px;
+  padding-top: 25px;
+  padding-left: 100px;
+  background-color: white;
+}
+
+#footer1 > label {
+  margin-left: 25px;
+}
+
+label {
+  font-size: 12px;
+}
+
+#flbl1:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+#footerline {
+  background: linear-gradient(to left, #ff2882, #963cff);
+  height: 0.3rem;
+  left: 0;
+  right: 0;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+#kuchbhi {
+  height: 400px;
+}
+
+#companyIcons {
+  height: 220px;
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+
+  flex-direction: row;
+}
+
+#companyIcons > div {
+  margin-left: 10px;
+  height: 200px;
+  width: 153px;
+  margin-top: 10px;
+  cursor: pointer;
+  color: grey;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+#companyIcons > div:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#companyIcons > div > img {
+  padding-top: 40px;
+  width: 100px;
+  margin-left: 25px;
+}
+
+#companyIcons > div > label {
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+#companyIcons > div > label:hover {
+  cursor: pointer;
+}
