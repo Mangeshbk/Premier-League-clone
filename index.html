@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Premier League</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        font-family: PremierSans-Regular, Arial, Helvetica Neue, Helvetica,
+          sans-serif;
+      }
+      #landing {
+        display: flex;
+        width: 98vw;
+      }
+      #left-land {
+        width: 25vw;
+        border-right: 4px solid #efefef;
+      }
+      #right-land {
+        width: 75vw;
+        /* border: 1px solid red; */
+      }
+      .left-land {
+        width: 70%;
+        margin: 7% 8% 7% 20%;
+        border: 1px solid blue;
+      }
+      .landing-finals {
+        margin-top: 15%;
+        height: 25vh;
+      }
+      .landing-fixture {
+        height: 130vh;
+      }
+      .landing-table {
+        height: 110vh;
+      }
+      .landing-music {
+        height: 75vh;
+      }
+      .landind-player,
+      .landing-manager {
+        height: 50vh;
+      }
+      .right-land {
+        width: 90%;
+        margin-left: 3%;
+      }
+      .main-view {
+        height: 65vh;
+        margin: 5% auto 5% 3%;
+        border: 1px solid red;
+      }
+      .main-subSponcer {
+        height: 25vh;
+        margin: 8% auto 5% 3%;
+        /* border: 1px solid red; */
+        border-bottom: 2px solid #efefef;
+      }
+      .main-subSponcer-div {
+        margin: 0 auto auto auto;
+        border: 1px solid red;
+        /* width: 90%; */
+        height: 20vh;
+      }
+      .main-oneTeam {
+        height: 60vh;
+        margin: -2% auto 5% 3%;
+        /* border: 1px solid red; */
+        border-bottom: 2px solid #efefef;
+      }
+      .main-latestVideo {
+        height: 70vh;
+        margin: -2% auto 3% 3%;
+        border: 1px solid red;
+        border-bottom: 2px solid #efefef;
+      }
+      .main-latestNews {
+        height: 105vh;
+        margin: 0% auto 3% 3%;
+        border: 1px solid red;
+        border-bottom: 2px solid #efefef;
+      }
+      .main-nikeBallHub {
+        height: 30vh;
+        margin: 0% auto 3% 3%;
+        border-bottom: 2px solid #efefef;
+      }
+      .main-nikeBallHub-div {
+        height: 25vh;
+        border: 1px solid red;
+      }
+      .main-FPLnews {
+        height: 60vh;
+        margin: 0% auto 3% 3%;
+        border: 1px solid red;
+        border-bottom: 2px solid #efefef;
+      }
+      .main-discover {
+        height: 55vh;
+        margin: 0% auto 3% 3%;
+        border-bottom: 2px solid #efefef;
+      }
+      .main-discover-div {
+        height: 50vh;
+        border: 1px solid red;
+      }
+      .main-photoGal {
+        height: 70vh;
+        margin: 0% auto 3% 3%;
+        /* border: 1px solid red; */
+        border-bottom: 2px solid #efefef;
+      }
+      .main-clubNews {
+        height: 75vh;
+        margin: 0% auto 3% 3%;
+        /* border: 1px solid red; */
+      }
+      .main-topHeading {
+        display: flex;
+        justify-content: space-between;
+      }
+      .main-topHeading > div > h2 {
+        left: 0;
+        font-size: 23px;
+      }
+      .main-topHeading > div > a {
+        /* margin-top: 5px; */
+        right: 50px;
+        text-decoration: none;
+        color: black;
+      }
+      .main-topHeading > div > a:hover {
+        margin-right: 15px;
+        color: #e90052;
+        text-decoration: underline;
+      }
+      .main-topHeading > div > span {
+        color: #e90052;
+        font-size: 20px;
+      }
+      .main-topHeading > div > span:hover {
+        /* margin-right: 15px;
+        transform: scale(2); */
+        font-size: 24px;
+      }
+      #clubNewsFlex {
+        display: flex;
+        gap: 0.5%;
+        flex-wrap: wrap;
+        margin: 1 auto;
+      }
+      .clubNewsFlex {
+        width: 24%;
+        margin: 1% auto;
+        cursor: pointer;
+        /* border: 1px solid green; */
+      }
+      .clubNewsFlex > div > img {
+        max-width: 100%;
+        max-height: 60%;
+        transition: transform 1s;
+        overflow: hidden;
+        display: inline-block;
+      }
+      /* .clubNewsFlex > div > img:hover {
+        transform: scale(1.05);
+      } */
+      .clubNewsFlex > a {
+        text-decoration: none;
+        color: #e90052;
+        font-size: 14px;
+        font-style: italic;
+      }
+      .clubNewsFlex > a > p {
+        color: #242424;
+        font-size: 18px;
+        line-height: 24px;
+        font-style: normal;
+        font-family: PremierSans-Regular, Arial, Helvetica Neue, Helvetica,
+          sans-serif;
+      }
+      .clubNewsFlex > a > p:hover {
+        text-decoration: underline;
+      }
+      .hover-border {
+        width: 0%;
+        height: 5px;
+        position: absolute;
+        transition: all 500ms ease-in-out;
+        transform: scaleX(0);
+        background: linear-gradient(to left, #ff2882, #963cff);
+      }
+      .hover-border:hover {
+        transform: scaleX(1);
+        /* width: 15%; */
+      }
+      .clubNewsFlex:hover div > img,
+      .hover-border {
+        transform: scale(1.05);
+      }
+      .clubNewsFlex:hover .hover-border {
+        width: 16%;
+      }
+
+      /* Photo gallery */
+      .photoGal-subdiv {
+        width: 100%;
+        height: 90%;
+        margin-top: 2%;
+        display: grid;
+        gap: 1%;
+        grid-template: "a a b c" "a a d e";
+      }
+      .photoGal-subdiv > div:nth-child(1) {
+        grid-area: a;
+        width: 100%;
+        height: 90%;
+        cursor: pointer;
+      }
+      .photoGal-subdiv > div:nth-child(2) {
+        grid-area: b;
+        cursor: pointer;
+        width: 100%;
+        height: 90%;
+        /* border: 1px solid black; */
+      }
+      .photoGal-subdiv > div:nth-child(3) {
+        grid-area: c;
+        cursor: pointer;
+        width: 100%;
+        height: 90%;
+        /* border: 1px solid black; */
+      }
+      .photoGal-subdiv > div:nth-child(4) {
+        grid-area: d;
+        cursor: pointer;
+        width: 100%;
+        height: 90%;
+        /* border: 1px solid black; */
+      }
+      .photoGal-subdiv > div:nth-child(5) {
+        grid-area: e;
+        cursor: pointer;
+        width: 100%;
+        height: 90%;
+        /* border: 1px solid black; */
+      }
+      .photoGal-subdiv-a > img {
+        width: 100%;
+        height: 75%;
+        transition: transform 1s;
+      }
+      .photoGal-subdiv-a > a {
+        font-size: 26px;
+        color: #242424;
+        margin-left: 20px;
+      }
+      .photoGal-subdiv-a > p {
+        font-size: 16px;
+        color: #242424;
+        margin-left: 20px;
+        line-height: 25px;
+      }
+      .photoGal-subdiv-b > img {
+        width: 100%;
+        height: 75%;
+        transition: transform 1s;
+      }
+      .photoGal-subdiv-b > a {
+        margin-left: 0px;
+        text-align: left;
+        text-decoration: none;
+        font-size: 18px;
+        color: #242424;
+      }
+      .photoGal-subdiv-b:hover a {
+        text-decoration: underline;
+      }
+
+      /* weareoneteam */
+
+      #main-oneTeam-flex {
+        display: flex;
+        gap: 0.5%;
+        flex-wrap: wrap;
+        margin: 1 auto;
+      }
+      .main-oneteam-flex {
+        width: 31%;
+
+        margin: 1% auto;
+      }
+      .main-oneTeam-flex-a {
+        height: 80%;
+        border-bottom: 1px solid #efefef;
+        margin-top: 10px;
+        cursor: pointer;
+      }
+      .main-oneTeam-flex-a > div > img {
+        width: 100%;
+        height: 55%;
+        transition: transform 1s;
+      }
+      .main-oneTeam-flex-border {
+        width: 20%;
+        height: 5px;
+        position: absolute;
+        transition: all 500ms ease-in-out;
+        transform: scaleX(0);
+        background: linear-gradient(to left, #ff2882, #963cff);
+      }
+      /* .main-oneTeam-flex-border {
+        transform: scaleX(1);
+        
+      } */
+      .main-oneTeam-flex-a > div > p {
+        color: #e90052;
+        font-style: italic;
+        font-size: 14px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+      }
+      .main-oneTeam-flex-a > div > a {
+        text-decoration: none;
+        font-size: 18px;
+        color: #242424;
+      }
+      .main-oneTeam-flex-a:hover img {
+        transform: scale(1.05);
+      }
+      .main-oneTeam-flex-a:hover a {
+        text-decoration: underline;
+      }
+      .main-oneTeam-flex-a:hover .main-oneTeam-flex-border {
+        margin-left: -2%;
+        width: 25%;
+        transform: scaleX(0.85);
+      }
+      .main-oneTeam-flex-b > div > span > img {
+        margin-top: 10px;
+        width: 20px;
+        height: 20px;
+      }
+      .main-oneTeam-flex-b > div > span > a {
+        text-decoration: none;
+        font-size: 12px;
+        margin-left: 10px;
+        color: #6c6c6c;
+        /* border: 1px solid; */
+      }
+      .main-oneTeam-flex-b > div > span > a:hover {
+        text-decoration: underline;
+        color: #e90052;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="landing">
+      <!--left side fixed  ----------------- -->
+      <div id="left-land">
+        <div class="landing-finals left-land"></div>
+        <div class="landing-fixture left-land"></div>
+        <div class="landing-table left-land"></div>
+        <div class="landing-music left-land"></div>
+        <div class="landind-player left-land"></div>
+        <div class="landind-player left-land"></div>
+        <div class="landind-player left-land"></div>
+        <div class="landing-manager left-land"></div>
+      </div>
+      <!--home page ----------------- -->
+      <div id="right-land">
+        <div class="main-view right-land"></div>
+        <div class="main-subSponcer right-land">
+          <div class="main-subSponcer-div"></div>
+        </div>
+        <div class="main-oneTeam right-land">
+          <!-- ----------------- -->
+          <div class="main-topHeading">
+            <div><h2>#WeAreOneTeam</h2></div>
+            <div>
+              <a href="">More Communities Stories</a>
+              <span>&rarr;</span>
+            </div>
+          </div>
+          <!-- ----------------- -->
+          <div id="main-oneTeam-flex">
+            <div>
+              <div><img src="" alt="" /></div>
+              <div></div>
+              <div>
+                <p></p>
+                <a href=""></a>
+              </div>
+            </div>
+            <div></div>
+          </div>
+          <!-- ----------------- -->
+        </div>
+        <div class="main-latestVideo right-land">
+          <!-- ----------------- -->
+          <div class="main-topHeading">
+            <div><h2>Latest Videos</h2></div>
+            <div>
+              <a href="">Latest Video</a>
+              <span>&rarr;</span>
+            </div>
+          </div>
+          <!-- ----------------- -->
+          <div></div>
+          <!-- ----------------- -->
+        </div>
+        <div class="main-latestNews right-land">
+          <!-- ----------------- -->
+          <div class="main-topHeading">
+            <div><h2>Latest News</h2></div>
+            <div>
+              <a href="">Latest News</a>
+              <span>&rarr;</span>
+            </div>
+          </div>
+          <!-- ----------------- -->
+          <div></div>
+          <!-- ----------------- -->
+        </div>
+        <div class="main-nikeBallHub right-land">
+          <div class="main-nikeBallHub-div"></div>
+        </div>
+        <div class="main-FPLnews right-land">
+          <!-- ----------------- -->
+          <div class="main-topHeading">
+            <div><h2>Latest FPL News</h2></div>
+            <div>
+              <a href="">More News</a>
+              <span>&rarr;</span>
+            </div>
+          </div>
+          <!-- ----------------- -->
+          <div></div>
+          <!-- ----------------- -->
+        </div>
+        <div class="main-discover right-land">
+          <div class="main-discover-div"></div>
+        </div>
+        <!-- main-photoGallary -->
+        <div class="main-photoGal right-land">
+          <!-- ----------------- -->
+          <div class="main-topHeading">
+            <div><h2>Photo Galleries</h2></div>
+            <div>
+              <a href="">More Photos </a>
+              <span>&rarr;</span>
+            </div>
+          </div>
+          <!-- ----------------- -->
+          <div class="photoGal-subdiv">
+            <div class="photoGal-subdiv-a">
+              <img
+                src="https://resources.premierleague.com/photos/2021/04/11/9fe84cf6-5066-4c5c-abf2-3daee0cfa040/1311977835.jpg?width=674&height=450"
+                alt=""
+              /><br /><br />
+              <a href="">What we learned in Matchweek 31</a><br /><br />
+              <p>
+                As Mason Greenwood closes in on a Wayne Rooney landmark, we look
+                at the key stats from the latest matches
+              </p>
+            </div>
+            <div class="photoGal-subdiv-b">
+              <img
+                src="https://resources.premierleague.com/photos/premierleague/photo/2021/04/09/8e396412-4674-4465-abf0-be02c9b1636c/2021-04-09T194105Z_993084822_UP1EH491IOFWM_RTRMADP_3_SOCCER-ENGLAND-FUL-WLV-REPORT.JPG?width=674&height=450"
+                alt=""
+              /><br /><br />
+              <a href="">Best photos of Matchweek 31</a>
+            </div>
+            <div class="photoGal-subdiv-b">
+              <img
+                src="https://resources.premierleague.com/photos/2021/04/04/62d5958c-41e1-4cca-8a10-77205461cb0e/Aston-Villa-3-1-Fulham.jpg?width=674&height=450"
+                alt=""
+              /><br /><br />
+              <a href="">Best photos of Matchweek 30</a>
+            </div>
+            <div class="photoGal-subdiv-b">
+              <img
+                src="https://resources.premierleague.com/photos/premierleague/photo/2021/04/05/ea82b4f3-0e9b-46f5-8514-2084c074fa7d/2021-04-05T181900Z_2073009120_UP1EH451EVNAG_RTRMADP_3_SOCCER-ENGLAND-EVE-CRY-REPORT.JPG?width=674&height=450"
+                alt=""
+              /><br /><br />
+              <a href="">What we learned in Matchweek 30</a>
+            </div>
+            <div class="photoGal-subdiv-b">
+              <img
+                src="https://resources.premierleague.com/photos/premierleague/photo/2021/03/21/78f08922-9e35-47d4-84f7-a6a68a4662eb/2021-03-21T205729Z_1837092328_UP1EH3L1M7RYB_RTRMADP_3_SOCCER-ENGLAND-AVA-TOT-REPORT.JPG?width=674&height=450"
+                alt=""
+              /><br /><br />
+              <a href="">Best photos of Matchweek 29</a>
+            </div>
+          </div>
+          <!-- ----------------- -->
+        </div>
+
+        <!-- main-clubNews -->
+        <div class="main-clubNews right-land">
+          <!-- ----------------- -->
+          <div class="main-topHeading">
+            <div><h2>Club News</h2></div>
+            <div>
+              <a href="">More Clubs </a>
+              <span>&rarr;</span>
+            </div>
+          </div>
+          <!-- ----------------- -->
+          <div id="clubNewsFlex"></div>
+
+          <!-- ----------------- -->
+        </div>
+      </div>
+      <!-- ----------------- -->
+    </div>
+
+    <script>
+      // main-clubNews
+      function mainClubNewsData() {
+        var div = document.getElementById("clubNewsFlex");
+        var mainClubNews = [
+          {
+            img:
+              "https://www.premierleague.com/resources/prod/3a85d04-3470/i/default-thumbnails/t1.png",
+            note: "Solskjaer: We'll welcome Jesse back",
+            news:
+              "https://www.manutd.com/en/news/detail/solskjaer-comments-on-jesse-lingard-west-ham-form-and-man-utd-future?utm_source=premier-league-website&utm_campaign=website&utm_medium=link",
+          },
+          {
+            img:
+              "https://www.premierleague.com/resources/prod/3a85d04-3470/i/default-thumbnails/t1.png",
+            note: "Solskjaer: We'll welcome Jesse back",
+            news:
+              "https://www.manutd.com/en/news/detail/solskjaer-comments-on-jesse-lingard-west-ham-form-and-man-utd-future?utm_source=premier-league-website&utm_campaign=website&utm_medium=link",
+          },
+          {
+            img:
+              "https://www.premierleague.com/resources/prod/3a85d04-3470/i/default-thumbnails/t4.png",
+            note:
+              "Focused Fernández hammers home importance of building on Burnley victory",
+            news:
+              "https://www.nufc.co.uk/nufc-tv/latest-videos/focused-fernandez-hammers-home-importance-of-building-on-burnley-victory/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link",
+          },
+          {
+            img:
+              "https://www.premierleague.com/resources/prod/3a85d04-3470/i/default-thumbnails/t1.png",
+            note: "Ole's reveals team news for Granada",
+            news:
+              "https://www.manutd.com/en/news/detail/ole-confirms-team-news-for-man-united-v-granada-europa-league-second-leg?utm_source=premier-league-website&utm_campaign=website&utm_medium=link",
+          },
+          {
+            img:
+              "https://www.premierleague.com/resources/prod/3a85d04-3470/i/default-thumbnails/t39.png",
+            note: "Wolves TV to cover Wolves Women's Blackburn tie",
+            news:
+              "https://www.wolves.co.uk/news/wolves-women/20210414-wolves-tv-to-cover-wolves-womens-blackburn-tie/",
+          },
+          {
+            img:
+              "https://www.premierleague.com/resources/prod/3a85d04-3470/i/default-thumbnails/t43.png",
+            note: "De Bruyne named Etihad Player of the Month",
+            news:
+              "https://www.mancity.com/citytv/mens/kevin-de-bruyne-etihad-player-of-the-month-63753988?utm_source=premier-league-website&utm_campaign=website&utm_medium=link",
+          },
+          {
+            img:
+              "https://www.premierleague.com/resources/prod/3a85d04-3470/i/default-thumbnails/t21.png",
+            note:
+              "On This Day: West Ham United leave Eintracht Frankfurt stuck in the mud",
+            news:
+              "https://www.whufc.com/news/articles/2021/april/14-april/day-west-ham-united-leave-eintracht-frankfurt-stuck-mud?utm_source=premier-league-website&utm_campaign=website&utm_medium=link",
+          },
+          {
+            img:
+              "https://www.premierleague.com/resources/prod/3a85d04-3470/i/default-thumbnails/t3.png",
+            note: "Team news: Auba, Odegaard, Saka, Smith Rowe",
+            news:
+              "https://www.arsenal.com/news/team-news-auba-odegaard-saka-smith-rowe?utm_source=premier-league-website&utm_campaign=website&utm_medium=link",
+          },
+        ];
+        mainClubNews.forEach((el) => {
+          var div1 = document.createElement("div");
+          div1.setAttribute("class", "clubNewsFlex");
+
+          div1.innerHTML = `
+            <div><img src="${el.img}" alt=""></div><div class="hover-border"></div><br><a href="${el.news}">Club News</a><br><a href="${el.news}"><p>${el.note}&#xf08e;</p></a>`;
+
+          div.appendChild(div1);
+        });
+      }
+      mainClubNewsData();
+
+      function showDiv() {
+        var div = document.getElementById("main-oneTeam-flex");
+        var data = [
+          {
+            image:
+              "https://resources.premierleague.com/photos/2021/04/07/368eb88d-0b76-46c0-bb57-da60f8a6fbcb/dermot-oleary-plps-challenge.png?width=500&height=333",
+            head: "communities",
+            note: "O'Leary: Do Wellbeing Stars Challenge to help others",
+            logo1:
+              "https://resources.premierleague.com/premierleague/badges/25/t20.png",
+            logo2:
+              "https://resources.premierleague.com/premierleague/badges/25/t20.png",
+            link: "",
+            note1: "Show your acts of kindness with Wellbeing Stars",
+            note2: "PL Primary Stars celebrates free books landmark",
+            link1: "",
+            link2: "",
+          },
+          {
+            image:
+              "https://resources.premierleague.com/photos/2021/04/02/557075b1-8eca-47be-9504-60113c6e83a4/WAOT-Man-Utd-Wes-Brown.png?width=500&height=333",
+            head: "communities",
+            note: "Man Utd Foundation continues support for local families",
+            logo1:
+              "https://resources.premierleague.com/premierleague/badges/25/t20.png",
+            logo2:
+              "https://resources.premierleague.com/premierleague/badges/25/t20.png",
+            link: "",
+            note1:
+              "The Foundation and FareShare donate over 380,000 food items",
+            note2: "Coronavirus: Latest on how clubs support community",
+            link1: "",
+            link2: "",
+          },
+          {
+            image:
+              "https://resources.premierleague.com/photos/2021/03/31/a981bcc1-498c-49c4-9636-b41845768faa/WAOT-Southampton-Michael.png?width=500&height=333",
+            head: "communities",
+            note: "How Southampton made Michael feel part of a team",
+            logo1:
+              "https://resources.premierleague.com/premierleague/badges/25/t20.png",
+            logo2:
+              "https://resources.premierleague.com/premierleague/badges/25/t20.png",
+            link: "",
+            note1: "Saints Foundation: Michael’s Story",
+            note2: "Coronavirus: Latest on how clubs support community",
+            link1: "",
+            link2: "",
+          },
+        ];
+        data.forEach((el) => {
+          var div1 = document.createElement("div");
+          div1.setAttribute("class", "main-oneteam-flex");
+
+          div1.innerHTML = `
+        <div class="main-oneTeam-flex-a">
+        <div>
+          <img
+            src=${el.image}
+            alt=""
+          />
+        </div>
+        <div class="main-oneTeam-flex-border"></div>
+        <div>
+          <p>${el.head}</p>
+          <a href="${el.link}">${el.note}</a>
+        </div>
+      </div>
+      <div class="main-oneTeam-flex-b">
+        <div>
+          <span
+            ><img
+              src=${el.logo1}
+              alt="" /></span
+          ><span><a href="${el.link1}">${el.note1}</a></span>
+        </div>
+        <div>
+          <span
+            ><img
+              src=${el.logo2}
+              alt="" /></span
+          ><span><a href="${el.link2}">${el.note2}</a></span>
+        </div>
+      </div>
+        `;
+          div.appendChild(div1);
+        });
+      }
+      showDiv();
+    </script>
+  </body>
+</html>
