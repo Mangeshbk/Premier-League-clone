@@ -24,15 +24,24 @@ function headerSec() {
 
             <div class="dropdown-content">
   <a href="#">Home</a>
+  <a href="#">Players</a>
   <a href="#">Fixtures</a>
+  <a href="#">Managers</a>
   <a href="#">Results</a>
-  <a href="#">Tables</a>
+  <a href="#">News</a>
+  <a href="tables.html">Tables</a>
+  <a href="#">Socials</a>
   <a href="#">Transfers</a>
-  <a href="#">Strategy</a>
+  <a href="#">Youth</a>
   <a href="#">Broadcasts</a>
+  <a href="#">SafeGuarding</a>
+  <a href="#">Tickets</a> 
+  <a href="#">History</a>
   <a href="#">Clubs</a>
-  <a href="#">Tickets</a>
-  </div>
+  <a href="#">Referees</a>
+  </div> 
+ 
+  
 </div>
 
 
@@ -84,24 +93,38 @@ function headerSec() {
 
                   <div class="dropdown-content">
   <a href="#">Stats</a>
-  <a href="#">Stay Well</a>
-  <a href="#">We are one Team</a>
+  <a href="#">ePremier League</a><a href="#">Stay Well</a>
+  <a href="#">About</a>
+    <a href="#">We are one Team</a>
+
+  <a href="#">Season Review</a>
   <a href="#">Rainbow Laces</a>
+  
+  <a href="#">Nike Ball HUb</a>
   <a href="#">King of the Match</a>
+
+  <a href="#">Contact Us</a>
   <a href="#">Transfers</a>
-  <a href="#">VAR</a>
+  
+  <a href="#">Poppy</a>
+    <a href="#">VAR</a>
+  <a href="#">Asia Trophy</a>
   <a href="#">Photos</a>
-  <a href="#">Partners</a>
+  <a href="#">PL Live</a>
+  <a href="#">Partners</a>  <a href="#">Publications</a>
+  
+  <a href="#">USA Bar Finder</a>
+  <a href="#">Legal</a>
   </div>
 </div>
 
 
 
 
-          <button style="margin-left: 400px" id="headbtn">
+          <button style="margin-left: 350px" id="headbtn">
             <strong>No Room for Racism</strong>
           </button>
-          <button id="headbtn"><strong>Sign in</strong></button
+          <button id="headbtn" style="margin-left:20px"><strong>Sign in</strong></button
           ><button
             type="submit"
             style="
@@ -111,16 +134,16 @@ function headerSec() {
               margin-right: 60px;
             "
           >
-            <i class="fa fa-search" id="headbtn" style="font-size:16px"></i>
           </button>
+            <i class="fa fa-search" id="headbtn" style="font-size:25px; padding-top:12px;"> </i>
         </div>
 
         <!--  -->
         <div id="head2">
-          <button style="margin-left: 40px">Home</button>
+          <button style="margin-left: 60px">Home</button>
           <button>Fixtures</button>
           <button>Results</button>
-          <button>Tables</button>
+          <button><a href="tables.html" style="text-decoration:none;color:#76766f">Tables</a></button>
           <button>Transfers</button>
           <button>Broadcast</button>
           <button>Tickets</button>
@@ -131,7 +154,7 @@ function headerSec() {
           <button>Social</button>
           <button>Youth</button>
           <button>Safeguarding</button>
-          <button style="margin-left: 61px" id="btn13">More</button>
+          <button style="margin-left: 200px; text-decoration:none" id="btn13">More</button>
         </div>
       </div>
     </div>

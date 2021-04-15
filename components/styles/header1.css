@@ -6,7 +6,6 @@
 #head1 {
   background-color: #37003c;
   height: 60px;
-  width: 100%;
 }
 #head2 {
   height: 55px;
@@ -29,16 +28,15 @@ button {
 #headbtn {
   font-size: 13px;
   color: white;
-  margin-left: 50px;
-  padding-top: 20px;
+  margin-left: 70px;
   cursor: pointer;
+  height: 60px;
 }
 #head2 > button {
   padding-top: 17px;
-  margin-left: 10px;
+  margin-left: 30px;
   padding-bottom: 17px;
   cursor: pointer;
-  width: 75px;
   font-size: 13px;
   color: #76766f;
 }
@@ -48,7 +46,7 @@ button {
   content: "";
   background: linear-gradient(to left, #ff2882, #963cff);
   transform: scaleX(0);
-  padding-bottom: 2px;
+  padding-bottom: 3px;
   transition: transform 250ms ease-in-out;
 }
 #head2 > button:hover:after {
@@ -58,6 +56,7 @@ button {
 #btn13:hover {
   background-color: #e8e8e8;
   padding-bottom: 20px;
+  text-decoration: none;
 }
 
 .dropdown {
@@ -67,15 +66,22 @@ button {
 
 .dropdown-content {
   display: none;
+  padding-left: 8px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   position: absolute;
   background-color: #f52a8f;
-  min-width: 200px;
+  min-width: 300px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   cursor: pointer;
 }
 
 .dropdown-content a {
+  float: left;
+  width: 41%;
+  display: block;
+  padding-left: 15px;
   color: white;
   padding: 8px 8px;
   font-size: 13px;
