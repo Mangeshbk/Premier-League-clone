@@ -23,7 +23,7 @@ function headerSec() {
           </button>
 
             <div class="dropdown-content">
-  <a href="#">Home</a>
+  <a href="index.html">Home</a>
   <a href="#">Players</a>
   <a href="#">Fixtures</a>
   <a href="#">Managers</a>
@@ -140,7 +140,7 @@ function headerSec() {
 
         <!--  -->
         <div id="head2">
-          <button style="margin-left: 60px">Home</button>
+          <button style="margin-left: 60px"><a href="index.html" style="text-decoration:none;color:#76766f">Home</a></button>
           <button>Fixtures</button>
           <button>Results</button>
           <button><a href="tables.html" style="text-decoration:none;color:#76766f">Tables</a></button>
@@ -154,7 +154,7 @@ function headerSec() {
           <button>Social</button>
           <button>Youth</button>
           <button>Safeguarding</button>
-          <button style="margin-left: 100px; text-decoration:none" id="btn13"><span>&#8942;</span> &nbsp;More</button>
+          <button style="margin-left: 70px; text-decoration:none" id="btn13"><span>&#8942;</span> &nbsp;More</button>
         </div>
       </div>
     </div>

@@ -5,7 +5,7 @@ function footer() {
 
   foot.innerHTML = `   
 
-  <div id="kuchbhi"></div>
+  
   
   <div id="footerline"></div>
 
