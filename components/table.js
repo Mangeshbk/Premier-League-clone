@@ -77,8 +77,8 @@ function tableData() {
       <option name="Home" value="Home">Home</option>
       <option name="Away" value="Away">Away</option>
 </select></div>
-   <div style="float: right;color: grey;">
-<i style="margin-top: 1px;" class="material-icons">&#xe5d5;</i>  Reset Filters</div>
+   <div style="float: right;color: grey;padding-top:15px" id="resetbtn">
+<i class="material-icons" style="float:left;margin-right:5px">&#xe5d5;</i>  Reset Filters</div>
  </div>
 
  
@@ -87,18 +87,18 @@ function tableData() {
   
 
 <div id="scores">
-  <label for="">More</label>  
-  <label for="">Position</label>
+  <label for="" style="margin-left: 25px;">More</label>  
+  <label for="" style="margin-left: 20px;">Position</label>
   <label for="" style="margin-left: 50px;">Club</label>
-  <label for="" style="margin-left: 300px;">Played</label>
-  <label for="">Won</label>
+  <label for="" style="margin-left: 310px;">Played</label>
+  <label for="" >Won</label>
   <label for="">Drawn</label>
   <label for="">Lost</label>
   <label for="">GF</label>
   <label for="">GA</label>
   <label for="">GD</label>
   <label for="">Points</label>
-  <label for=""style="margin-left: 150px;">From</label>
+  <label for=""style="margin-left: 100px;">From</label>
   <label for="" style="float: right;margin-right: 20px;">Next</label>
 </div>
 
@@ -124,7 +124,11 @@ function tableData() {
       div.innerHTML = `
 <span style='font-size:14px;'>&#8744;</span> <label id="lbl1"> ${[
         i + 1,
-      ]}&nbsp;&nbsp;•</label> <label  id="lbl2"> ${records[i].team}</label>
+      ]}&nbsp;&nbsp;•</label> <label  id="lbl2" ><img src="${
+        records[i].icon
+      }" style="float:left;margin-right:15px;padding-bottom:20px; width:25px"/> <span>${
+        records[i].team
+      }</span></label>
       <label id="lbl3">${records[i].played}</label><label id="lbl4">${
         records[i].win
       }</label><label id="lbl5">${records[i].draw}</label><label id="lbl6">${
@@ -137,7 +141,11 @@ function tableData() {
         records[i].goalsAgainst
       }</label><label id="lbl10" style="font-weight: bold">${
         records[i].points
-      }</label>`;
+      }</label><label id="lbl11"><img src="${
+        records[i].imageUrl
+      }"/></label><label id="lbl12"><img src="${
+        records[i].image
+      }" width:25px/></label>`;
 
       displayScore.appendChild(div);
     }
