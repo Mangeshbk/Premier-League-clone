@@ -20,10 +20,25 @@
       #landing {
         display: flex;
         width: 98vw;
+        background: linear-gradient(270deg, #05f0ff 30%, #963cff);
+        height: 95vh;
+      }
+      #left-border {
+        border-left: 4px solid #efefef;
+      }
+      #left-border-a {
+        /* border-left: 4px solid #617eff; */
+        float: left;
+        width: 4px;
+        height: 5vh;
+        background: #efefef;
+        margin-top: -4vh;
+        margin-left: -4px;
       }
       #left-land {
         width: 25vw;
-        border-right: 4px solid #efefef;
+        /* margin-top: 90vh; */
+        border-right: 4px solid #617eff;
       }
       #right-land {
         width: 75vw;
@@ -56,9 +71,140 @@
         margin-left: 3%;
       }
       .main-view {
-        height: 65vh;
+        height: 80vh;
         margin: 5% auto 5% 3%;
-        border: 1px solid red;
+        /* border: 1px solid red; */
+        display: flex;
+        gap: 3%;
+        flex-direction: column;
+      }
+      .main-view-div1 {
+        /* border: 1px solid red; */
+        width: 100%;
+        height: 85%;
+        display: flex;
+      }
+      .main-view-div1a,
+      .main-view-div1b {
+        width: 100%;
+        height: 100%;
+      }
+      .main-view-div1a > img {
+        width: 100%;
+        height: 100%;
+        transition: transform 1s;
+        cursor: pointer;
+      }
+      .main-view-div1a > img:hover {
+        transform: scale(1.015);
+      }
+      /* .main-view-div1b {
+        border-left: ;
+      } */
+      .main-view-border {
+        width: 0.4%;
+        height: 100%;
+        /* border: 1px solid red; */
+        background: linear-gradient(to bottom, #05f0ff, #963cff);
+      }
+      .main-view-div2 {
+        width: 100%;
+        height: 15%;
+        display: flex;
+        gap: 1%;
+      }
+      .main-view-div2-left {
+        /* border: 1px solid red; */
+        width: 100%;
+        display: flex;
+      }
+      .main-view-div2-left > div:nth-child(1) {
+        width: 18%;
+        /* border: 1px solid red; */
+      }
+      .main-view-div2-left > div:nth-child(1) > img {
+        width: 100%;
+        height: 100%;
+        transition: transform 1s;
+      }
+      .main-view-div2-left > div:nth-child(1) > img:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+      }
+      .main-view-div2-left > div:nth-child(2) {
+        width: 0.5%;
+        background: linear-gradient(to bottom, #05f0ff, #963cff);
+        /* border: 1px solid red; */
+      }
+      .main-view-div2-left > div:nth-child(3) {
+        width: 81.5%;
+        background: #36134f;
+      }
+      .main-view-div2-left > div:nth-child(3) > a {
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: bold;
+        margin: auto auto auto 10%;
+      }
+      .main-view-div2-left > div:nth-child(3) > a:hover {
+        text-decoration: underline;
+      }
+      .main-view-div1b {
+        background: #32184f;
+      }
+      .main-view-div1b > span {
+        color: #05f0ff;
+        font-size: 14px;
+        font-style: italic;
+        font-weight: bold;
+        margin-left: 5%;
+      }
+      .main-view-div1b > h4 {
+        color: #ffffff;
+        font-size: 40px;
+        margin-left: 5%;
+      }
+      .main-view-div1b > p {
+        margin-left: 5%;
+        color: #ffffff;
+        line-height: 24px;
+      }
+      .main-view-div1b > h5 {
+        margin-left: 5%;
+        color: #ffffff;
+        font-size: 16px;
+      }
+      .main-view-div1b > h4:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      .main-view-div1b > div {
+        width: 80%;
+        height: 25%;
+        margin-top: 5%;
+        margin-left: 5%;
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid red; */
+      }
+      .main-view-div1b-subdiv > div > span > img {
+        width: 30px;
+        height: 30px;
+        margin-top: 10px;
+        border-radius: 50%;
+        float: left;
+      }
+      .main-view-div1b-subdiv > div > a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 14px;
+        padding: 5px;
+        float: right;
+        margin-top: 10px;
+      }
+      .main-view-div1b-subdiv > div > a:hover {
+        text-decoration: underline;
+        cursor: pointer;
       }
       .main-subSponcer {
         height: 25vh;
@@ -68,9 +214,29 @@
       }
       .main-subSponcer-div {
         margin: 0 auto auto auto;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         /* width: 90%; */
         height: 20vh;
+        background: #f4f4f4;
+      }
+      .main-subSponcer-div > ul {
+        display: flex;
+        gap: 2%;
+        width: 85%;
+        margin: auto;
+      }
+      .main-subSponcer-div > ul > li {
+        cursor: pointer;
+        margin: auto;
+        margin-top: 5%;
+        list-style-type: none;
+        width: 12%;
+        height: 100%;
+        /* border: 1px solid black; */
+      }
+      .main-subSponcer-div > ul > li > a > img {
+        width: 100%;
+        height: 100%;
       }
       .main-oneTeam {
         height: 60vh;
@@ -81,13 +247,13 @@
       .main-latestVideo {
         height: 70vh;
         margin: -2% auto 3% 3%;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         border-bottom: 2px solid #efefef;
       }
       .main-latestNews {
-        height: 105vh;
+        height: 65vh;
         margin: 0% auto 3% 3%;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         border-bottom: 2px solid #efefef;
       }
       .main-nikeBallHub {
@@ -96,13 +262,55 @@
         border-bottom: 2px solid #efefef;
       }
       .main-nikeBallHub-div {
+        display: flex;
+        background: url("./img/nikeBallHub.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
         height: 25vh;
-        border: 1px solid red;
+      }
+      .main-nikeBallHub-div > div:nth-child(1) {
+        width: 15%;
+        height: 25vh;
+      }
+      .main-nikeBallHub-div > div > img {
+        margin-top: 5vh;
+        width: 180px;
+        height: 122px;
+      }
+      .main-nikeBallHub-div > div:nth-child(2) {
+        margin: 3% auto auto 10%;
+        width: 60%;
+        height: 25vh;
+        color: white;
+      }
+      .main-nikeBallHub-div > div > h2 {
+        font-size: 24px;
+      }
+      .main-nikeBallHub-div > div > p {
+        margin-top: -10px;
+        font-size: 15px;
+        line-height: 22px;
+      }
+      .main-nikeBallHub-div > div > button {
+        margin-top: -10px;
+        background-color: #37003c;
+        border: none;
+        outline: none;
+        width: 155px;
+        height: 40px;
+        border-radius: 5px;
+        font-weight: bolder;
+        color: white;
+        cursor: pointer;
+        /* margin: 32% auto auto 40%; */
+      }
+      .main-nikeBallHub-div > div > button:hover span {
+        margin-left: 15px;
       }
       .main-FPLnews {
-        height: 60vh;
+        height: 115vh;
         margin: 0% auto 3% 3%;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         border-bottom: 2px solid #efefef;
       }
       .main-discover {
@@ -112,8 +320,40 @@
       }
       .main-discover-div {
         height: 50vh;
-        border: 1px solid red;
+        /* border: 1px solid red; */
+        background-image: url("https://resources.premierleague.com/photos/2020/10/14/58bbebee-0a13-48b7-9c81-de3b1014e063/KOTM_HomePageAssets-NewKOTM-Asset-16_9-1-.png?width=1600");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
       }
+      .main-discover-div > button {
+        background-color: #c8102e;
+        border: none;
+        outline: none;
+        width: 190px;
+        height: 40px;
+        border-radius: 5px;
+        font-weight: bolder;
+        color: white;
+        margin: 32% auto auto 40%;
+        /* box-shadow: inset 0 0 0 0 rgb(235, 210, 210); */
+      }
+      .main-discover-div > button:hover {
+        cursor: pointer;
+        transition: transition 2s;
+        background: linear-gradient(to left, #ff2882, #963cff);
+
+        /* box-shadow: inset 300px 0 0 0 linear-gradient(to left, #ff2882, #963cff); */
+      }
+      .main-discover-div > button:hover span {
+        margin-left: 15px;
+      }
+      /* .main-discover-div > img {
+        width: 200px;
+        height: 50px;
+        margin: 0% auto auto 70%;
+      } */
+
+      /* photo-gallery */
       .main-photoGal {
         height: 70vh;
         margin: 0% auto 3% 3%;
@@ -135,6 +375,7 @@
       }
       .main-topHeading > div > a {
         /* margin-top: 5px; */
+        font-size: 15px;
         right: 50px;
         text-decoration: none;
         color: black;
@@ -196,20 +437,21 @@
         width: 0%;
         height: 5px;
         position: absolute;
-        transition: all 500ms ease-in-out;
+        transition: all 1000ms ease-in-out;
         transform: scaleX(0);
         background: linear-gradient(to left, #ff2882, #963cff);
       }
-      .hover-border:hover {
+      /* .hover-border:hover {
+        width: 15%;
         transform: scaleX(1);
-        /* width: 15%; */
-      }
+      } */
       .clubNewsFlex:hover div > img,
       .hover-border {
         transform: scale(1.05);
       }
       .clubNewsFlex:hover .hover-border {
         width: 16%;
+        transform: scaleX(1);
       }
 
       /* Photo gallery */
@@ -224,8 +466,9 @@
       .photoGal-subdiv > div:nth-child(1) {
         grid-area: a;
         width: 100%;
-        height: 90%;
+        height: 97%;
         cursor: pointer;
+        background: linear-gradient(to left, #37003c, #720c51);
       }
       .photoGal-subdiv > div:nth-child(2) {
         grid-area: b;
@@ -255,26 +498,34 @@
         height: 90%;
         /* border: 1px solid black; */
       }
+
       .photoGal-subdiv-a > img {
         width: 100%;
-        height: 75%;
+        height: 70%;
         transition: transform 1s;
       }
+      .photoGal-subdiv-a:hover img {
+        transform: scale(1.03);
+      }
       .photoGal-subdiv-a > a {
+        text-decoration: none;
         font-size: 26px;
-        color: #242424;
+        color: #ffffff;
         margin-left: 20px;
+      }
+      .photoGal-subdiv-a:hover a {
+        text-decoration: underline;
       }
       .photoGal-subdiv-a > p {
         font-size: 16px;
-        color: #242424;
+        color: #ffffff;
         margin-left: 20px;
         line-height: 25px;
       }
       .photoGal-subdiv-b > img {
         width: 100%;
         height: 75%;
-        transition: transform 1s;
+        transition: transform 1s ease-in-out;
       }
       .photoGal-subdiv-b > a {
         margin-left: 0px;
@@ -286,10 +537,41 @@
       .photoGal-subdiv-b:hover a {
         text-decoration: underline;
       }
+      .photoGal-subdiv-border1 {
+        width: 30%;
+        height: 5px;
+        position: absolute;
+        transition: all 500ms ease-in-out;
+        transform: scaleX(0);
+        background: linear-gradient(to left, #ff2882, #963cff);
+      }
+      .photoGal-subdiv-a:hover .photoGal-subdiv-border1 {
+        margin-left: -0.5%;
+        width: 31.5%;
+        transform: scaleX(1);
+      }
+      .photoGal-subdiv-border2 {
+        width: 15%;
+        height: 5px;
+        position: absolute;
+        transition: all 500ms ease-in-out;
+        transform: scaleX(0);
+        background: linear-gradient(to left, #ff2882, #963cff);
+      }
+      .photoGal-subdiv-b:hover .photoGal-subdiv-border2 {
+        margin-left: -0.4%;
+        width: 17.7%;
+        transform: scaleX(1);
+      }
+      .photoGal-subdiv-b:hover img {
+        transform: scale(1.05);
+      }
 
       /* weareoneteam */
 
-      #main-oneTeam-flex {
+      #main-oneTeam-flex,
+      #main-latestNews-flex,
+      #main-FPLnews-flex {
         display: flex;
         gap: 0.5%;
         flex-wrap: wrap;
@@ -321,7 +603,7 @@
       }
       /* .main-oneTeam-flex-border {
         transform: scaleX(1);
-        
+
       } */
       .main-oneTeam-flex-a > div > p {
         color: #e90052;
@@ -372,157 +654,358 @@
         <div class="landing-fixture left-land"></div>
         <div class="landing-table left-land"></div>
         <div class="landing-music left-land"></div>
-        <div class="landind-player left-land"></div>
+        <div id="" class="landind-player left-land"></div>
         <div class="landind-player left-land"></div>
         <div class="landind-player left-land"></div>
         <div class="landing-manager left-land"></div>
       </div>
       <!--home page ----------------- -->
       <div id="right-land">
-        <div class="main-view right-land"></div>
-        <div class="main-subSponcer right-land">
-          <div class="main-subSponcer-div"></div>
-        </div>
-        <div class="main-oneTeam right-land">
-          <!-- ----------------- -->
-          <div class="main-topHeading">
-            <div><h2>#WeAreOneTeam</h2></div>
-            <div>
-              <a href="">More Communities Stories</a>
-              <span>&rarr;</span>
+        <div class="main-view right-land">
+          <div class="main-view-div1">
+            <div class="main-view-div1a">
+              <img
+                src="https://resources.premierleague.com/photos/2021/04/15/5ded54c5-8075-4b23-a088-c28b5f91a442/coleman-digne-2.png?width=500&height=380"
+                alt=""
+              />
             </div>
-          </div>
-          <!-- ----------------- -->
-          <div id="main-oneTeam-flex">
-            <div>
-              <div><img src="" alt="" /></div>
-              <div></div>
-              <div>
-                <p></p>
-                <a href=""></a>
+            <div class="main-view-border"></div>
+            <div class="main-view-div1b">
+              <br /><br />
+              <span>Talking Tactics</span><br /><br />
+              <h4>
+                <a href=""></a>Everton full-backs are the biggest threat to
+                Spurs
+              </h4>
+              <br />
+              <p>
+                Adrian Clarke says Seamus Coleman and Lucas Digne can help to
+                revive club's European hopes
+              </p>
+              <br />
+              <h5>Related content</h5>
+              <div class="main-view-div1b-subdiv">
+                <div>
+                  <span><img src="./img/play_logo.png" alt="" /></span>
+                  <a style="margin-right: 40%" href=""
+                    >Match preview: Everton v Spurs</a
+                  >
+                </div>
+                <div>
+                  <span
+                    ><img
+                      src="https://resources.premierleague.com/premierleague/badges/25/t11.png"
+                      alt=""
+                  /></span>
+                  <a style="margin-right: 26%" href=""
+                    >Everton boss delivers team news update</a
+                  >
+                </div>
+
+                <div>
+                  <span><img src="./img/play_logo.png" alt="" /></span>
+                  <a style="margin-right: 10%" href=""
+                    >Classic match: Arteta inspires Everton win at Spurs</a
+                  >
+                </div>
               </div>
             </div>
-            <div></div>
           </div>
-          <!-- ----------------- -->
-        </div>
-        <div class="main-latestVideo right-land">
-          <!-- ----------------- -->
-          <div class="main-topHeading">
-            <div><h2>Latest Videos</h2></div>
-            <div>
-              <a href="">Latest Video</a>
-              <span>&rarr;</span>
+          <div class="main-view-div2">
+            <div class="main-view-div2-left">
+              <div>
+                <img
+                  style="width: 100%; height: 100%"
+                  src="https://resources.premierleague.com/photos/2021/04/15/d75f6c01-fe27-46ea-a276-ee1dcfc0a9c7/c59qa3wb.jpg?width=860&height=573"
+                  alt=""
+                />
+              </div>
+              <div></div>
+              <div>
+                <br /><br />
+                <a href="">FPL Gameweek 32 Scout Selection</a>
+              </div>
             </div>
-          </div>
-          <!-- ----------------- -->
-          <div></div>
-          <!-- ----------------- -->
-        </div>
-        <div class="main-latestNews right-land">
-          <!-- ----------------- -->
-          <div class="main-topHeading">
-            <div><h2>Latest News</h2></div>
-            <div>
-              <a href="">Latest News</a>
-              <span>&rarr;</span>
-            </div>
-          </div>
-          <!-- ----------------- -->
-          <div></div>
-          <!-- ----------------- -->
-        </div>
-        <div class="main-nikeBallHub right-land">
-          <div class="main-nikeBallHub-div"></div>
-        </div>
-        <div class="main-FPLnews right-land">
-          <!-- ----------------- -->
-          <div class="main-topHeading">
-            <div><h2>Latest FPL News</h2></div>
-            <div>
-              <a href="">More News</a>
-              <span>&rarr;</span>
+            <div class="main-view-div2-left">
+              <div>
+                <img
+                  style="width: 100%; height: 100%"
+                  src="https://resources.premierleague.com/photos/2020/10/23/96fa2ef2-5d8a-43db-b529-eeeb90c922ac/NRFR-Hub-Design.png?width=929&height=620"
+                  alt=""
+                />
+              </div>
+              <div></div>
+              <div>
+                <br /><br />
+                <a href="">How to report racism</a>
+              </div>
             </div>
           </div>
-          <!-- ----------------- -->
-          <div></div>
-          <!-- ----------------- -->
         </div>
-        <div class="main-discover right-land">
-          <div class="main-discover-div"></div>
-        </div>
-        <!-- main-photoGallary -->
-        <div class="main-photoGal right-land">
-          <!-- ----------------- -->
-          <div class="main-topHeading">
-            <div><h2>Photo Galleries</h2></div>
-            <div>
-              <a href="">More Photos </a>
-              <span>&rarr;</span>
-            </div>
-          </div>
-          <!-- ----------------- -->
-          <div class="photoGal-subdiv">
-            <div class="photoGal-subdiv-a">
-              <img
-                src="https://resources.premierleague.com/photos/2021/04/11/9fe84cf6-5066-4c5c-abf2-3daee0cfa040/1311977835.jpg?width=674&height=450"
-                alt=""
-              /><br /><br />
-              <a href="">What we learned in Matchweek 31</a><br /><br />
-              <p>
-                As Mason Greenwood closes in on a Wayne Rooney landmark, we look
-                at the key stats from the latest matches
-              </p>
-            </div>
-            <div class="photoGal-subdiv-b">
-              <img
-                src="https://resources.premierleague.com/photos/premierleague/photo/2021/04/09/8e396412-4674-4465-abf0-be02c9b1636c/2021-04-09T194105Z_993084822_UP1EH491IOFWM_RTRMADP_3_SOCCER-ENGLAND-FUL-WLV-REPORT.JPG?width=674&height=450"
-                alt=""
-              /><br /><br />
-              <a href="">Best photos of Matchweek 31</a>
-            </div>
-            <div class="photoGal-subdiv-b">
-              <img
-                src="https://resources.premierleague.com/photos/2021/04/04/62d5958c-41e1-4cca-8a10-77205461cb0e/Aston-Villa-3-1-Fulham.jpg?width=674&height=450"
-                alt=""
-              /><br /><br />
-              <a href="">Best photos of Matchweek 30</a>
-            </div>
-            <div class="photoGal-subdiv-b">
-              <img
-                src="https://resources.premierleague.com/photos/premierleague/photo/2021/04/05/ea82b4f3-0e9b-46f5-8514-2084c074fa7d/2021-04-05T181900Z_2073009120_UP1EH451EVNAG_RTRMADP_3_SOCCER-ENGLAND-EVE-CRY-REPORT.JPG?width=674&height=450"
-                alt=""
-              /><br /><br />
-              <a href="">What we learned in Matchweek 30</a>
-            </div>
-            <div class="photoGal-subdiv-b">
-              <img
-                src="https://resources.premierleague.com/photos/premierleague/photo/2021/03/21/78f08922-9e35-47d4-84f7-a6a68a4662eb/2021-03-21T205729Z_1837092328_UP1EH3L1M7RYB_RTRMADP_3_SOCCER-ENGLAND-AVA-TOT-REPORT.JPG?width=674&height=450"
-                alt=""
-              /><br /><br />
-              <a href="">Best photos of Matchweek 29</a>
+        <!-- ----------------- -->
+        <div id="left-border">
+          <div id="left-border-a"></div>
+          <div class="main-subSponcer right-land">
+            <div class="main-subSponcer-div">
+              <ul>
+                <li>
+                  <a
+                    href="https://www.ea.com/games/fifa/fifa-21?utm_source=premier-league-website&utm_campaign=website&utm_medium=link?utm_source=premier-league-website&utm_campaign=website&utm_medium=link?utm_source=premier-league-website&utm_campaign=website&utm_medium=link?utm_source=premier-league-website&utm_campaign=website&utm_medium=link"
+                    ><img
+                      style="margin-top: -25px; border-radius: 50%"
+                      src="img/easports1.png"
+                      alt="EA sports"
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    href="https://home.barclays/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link"
+                    ><img
+                      style="margin-top: 12px; height: 40px"
+                      src="img/barcley1.png"
+                      alt="barclays"
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://www.budweiser.com/"
+                    ><img
+                      style="margin-top: 7px; height: 50px"
+                      src="./img/budweiser1.png"
+                      alt="budweiser"
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.coca-cola.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link"
+                    ><img
+                      style="margin-top: 7px; height: 50px"
+                      src="./img/coca-cola1.png"
+                      alt="coca-cola"
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.hublot.com/en-int/?utm_source=premier-league&utm_medium=referral&utm_campaign=premier-league-website&country=IN"
+                    ><img
+                      style="margin-top: 7px; height: 50px"
+                      src="./img/hublot1.png"
+                      alt="hublot"
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.nike.com/gb/w/mens-premier-league-accessories-equipment-2spkszawwpwznik1/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link"
+                    ><img
+                      style="margin-top: 7px; height: 50px"
+                      src="./img/nike1.png"
+                      alt="nike"
+                  /></a>
+                </li>
+              </ul>
             </div>
           </div>
           <!-- ----------------- -->
-        </div>
+          <div class="main-oneTeam right-land">
+            <!-- ----------------- -->
+            <div class="main-topHeading">
+              <div><h2>#WeAreOneTeam</h2></div>
+              <div>
+                <a href="">More Communities Stories</a>
+                <span>&rarr;</span>
+              </div>
+            </div>
+            <!-- ----------------- -->
+            <div id="main-oneTeam-flex"></div>
+            <!-- ----------------- -->
+          </div>
+          <div class="main-latestVideo right-land">
+            <!-- ----------------- -->
+            <div class="main-topHeading">
+              <div><h2>Latest Videos</h2></div>
+              <div>
+                <a href="">Latest Video</a>
+                <span>&rarr;</span>
+              </div>
+            </div>
+            <!-- ----------------- -->
+            <div class="photoGal-subdiv">
+              <div class="photoGal-subdiv-a">
+                <img src="./img/latestVideo_img1.png" alt="" /><br />
+                <div class="photoGal-subdiv-border1"></div>
+                <br />
 
-        <!-- main-clubNews -->
-        <div class="main-clubNews right-land">
-          <!-- ----------------- -->
-          <div class="main-topHeading">
-            <div><h2>Club News</h2></div>
-            <div>
-              <a href="">More Clubs </a>
-              <span>&rarr;</span>
+                <a href="">Match preview: Everton v Spurs</a><br /><br />
+                <p>
+                  "Sam has gone for a Spurs triple-up, while Lee is backing two
+                  Chelsea differentials"
+                </p>
+              </div>
+              <div class="photoGal-subdiv-b">
+                <img src="./img/latestVideo_img2.png" alt="" /><br />
+                <div class="photoGal-subdiv-border2"></div>
+                <br />
+                <a href="">FPL Show Ep 32: Best Spurs Double Gameweek picks</a>
+              </div>
+              <div class="photoGal-subdiv-b">
+                <img src="./img/latestVideo_img3.png" alt="" /><br />
+                <div class="photoGal-subdiv-border2"></div>
+                <br />
+                <a href="">Match preview: Everton v Spurs</a>
+              </div>
+              <div class="photoGal-subdiv-b">
+                <img src="./img/latestVideo_img4.png" alt="" /><br />
+                <div class="photoGal-subdiv-border2"></div>
+                <br />
+                <a href="">FPL Show Ep 32: Team talk – Leicester City</a>
+              </div>
+              <div class="photoGal-subdiv-b">
+                <img src="./img/latestVideo_img5.png" alt="" /><br />
+                <div class="photoGal-subdiv-border2"></div>
+                <br />
+                <a href="">FPL Show Ep 32: Player focus - Bruno Fernandes</a>
+              </div>
+            </div>
+            <!-- ----------------- -->
+          </div>
+          <div class="main-latestNews right-land">
+            <!-- ----------------- -->
+            <div class="main-topHeading">
+              <div><h2>Latest News</h2></div>
+              <div>
+                <a href="">Latest News</a>
+                <span>&rarr;</span>
+              </div>
+            </div>
+            <!-- ----------------- -->
+            <div id="main-latestNews-flex"></div>
+            <!-- ----------------- -->
+          </div>
+          <div class="main-nikeBallHub right-land">
+            <div class="main-nikeBallHub-div">
+              <div>
+                <img
+                  src="https://www.premierleague.com/resources/prod/3a85d04-3470/i/nike-ball-hub/combined_ball_image.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <h2>NIKE BALL HUB</h2>
+                <br />
+                <p>
+                  Discover the history of the Nike ball and its 21-year
+                  association with the Premier League, from the Nike Geo Merlin
+                  in 2000/01 to the Nike Flight in 2020/21.
+                </p>
+                <br />
+                <button>Explore now <span>&rarr;</span></button>
+              </div>
             </div>
           </div>
-          <!-- ----------------- -->
-          <div id="clubNewsFlex"></div>
+          <div class="main-FPLnews right-land">
+            <!-- ----------------- -->
+            <div class="main-topHeading">
+              <div><h2>Latest FPL News</h2></div>
+              <div>
+                <a href="">More News</a>
+                <span>&rarr;</span>
+              </div>
+            </div>
+            <!-- ----------------- -->
+            <div id="main-FPLnews-flex"></div>
+            <!-- ----------------- -->
+          </div>
 
-          <!-- ----------------- -->
+          <div class="main-discover right-land">
+            <div class="main-discover-div">
+              <button>Discover more <span>&rarr;</span></button>
+              <!-- <img src="./img/drinkware.png" alt="" /> -->
+            </div>
+          </div>
+
+          <!-- main-photoGallary -->
+          <div class="main-photoGal right-land">
+            <!-- ----------------- -->
+            <div class="main-topHeading">
+              <div><h2>Photo Galleries</h2></div>
+              <div>
+                <a href="">More Photos </a>
+                <span>&rarr;</span>
+              </div>
+            </div>
+            <!-- ----------------- -->
+            <div class="photoGal-subdiv">
+              <div class="photoGal-subdiv-a">
+                <img
+                  src="https://resources.premierleague.com/photos/2021/04/11/9fe84cf6-5066-4c5c-abf2-3daee0cfa040/1311977835.jpg?width=674&height=450"
+                  alt=""
+                /><br />
+                <div class="photoGal-subdiv-border1"></div>
+                <br />
+
+                <a href="">What we learned in Matchweek 31</a><br /><br />
+                <p>
+                  As Mason Greenwood closes in on a Wayne Rooney landmark, we
+                  look at the key stats from the latest matches
+                </p>
+              </div>
+              <div class="photoGal-subdiv-b">
+                <img
+                  src="https://resources.premierleague.com/photos/premierleague/photo/2021/04/09/8e396412-4674-4465-abf0-be02c9b1636c/2021-04-09T194105Z_993084822_UP1EH491IOFWM_RTRMADP_3_SOCCER-ENGLAND-FUL-WLV-REPORT.JPG?width=674&height=450"
+                  alt=""
+                /><br />
+                <div class="photoGal-subdiv-border2"></div>
+                <br />
+                <a href="">Best photos of Matchweek 31</a>
+              </div>
+              <div class="photoGal-subdiv-b">
+                <img
+                  src="https://resources.premierleague.com/photos/2021/04/04/62d5958c-41e1-4cca-8a10-77205461cb0e/Aston-Villa-3-1-Fulham.jpg?width=674&height=450"
+                  alt=""
+                /><br />
+                <div class="photoGal-subdiv-border2"></div>
+                <br />
+                <a href="">Best photos of Matchweek 30</a>
+              </div>
+              <div class="photoGal-subdiv-b">
+                <img
+                  src="https://resources.premierleague.com/photos/premierleague/photo/2021/04/05/ea82b4f3-0e9b-46f5-8514-2084c074fa7d/2021-04-05T181900Z_2073009120_UP1EH451EVNAG_RTRMADP_3_SOCCER-ENGLAND-EVE-CRY-REPORT.JPG?width=674&height=450"
+                  alt=""
+                /><br />
+                <div class="photoGal-subdiv-border2"></div>
+                <br />
+                <a href="">What we learned in Matchweek 30</a>
+              </div>
+              <div class="photoGal-subdiv-b">
+                <img
+                  src="https://resources.premierleague.com/photos/premierleague/photo/2021/03/21/78f08922-9e35-47d4-84f7-a6a68a4662eb/2021-03-21T205729Z_1837092328_UP1EH3L1M7RYB_RTRMADP_3_SOCCER-ENGLAND-AVA-TOT-REPORT.JPG?width=674&height=450"
+                  alt=""
+                /><br />
+                <div class="photoGal-subdiv-border2"></div>
+                <br />
+                <a href="">Best photos of Matchweek 29</a>
+              </div>
+            </div>
+            <!-- ----------------- -->
+          </div>
+
+          <!-- main-clubNews -->
+          <div class="main-clubNews right-land">
+            <!-- ----------------- -->
+            <div class="main-topHeading">
+              <div><h2>Club News</h2></div>
+              <div>
+                <a href="">More Clubs </a>
+                <span>&rarr;</span>
+              </div>
+            </div>
+            <!-- ----------------- -->
+            <div id="clubNewsFlex"></div>
+
+            <!-- ----------------- -->
+          </div>
         </div>
+        <!-- ----------------- -->
       </div>
-      <!-- ----------------- -->
     </div>
 
     <script>
@@ -594,63 +1077,17 @@
           div1.setAttribute("class", "clubNewsFlex");
 
           div1.innerHTML = `
-            <div><img src="${el.img}" alt=""></div><div class="hover-border"></div><br><a href="${el.news}">Club News</a><br><a href="${el.news}"><p>${el.note}&#xf08e;</p></a>`;
+            <div><img src="${el.img}" alt=""></div><div class="hover-border"></div><br><a href="${el.news}">Club News</a><br><a href="${el.news}"><p>${el.note} <i style="font-size: 11px; color: grey" class="fa"
+                  >&#xf08e;</i
+                ></p></a>`;
 
           div.appendChild(div1);
         });
       }
       mainClubNewsData();
 
-      function showDiv() {
-        var div = document.getElementById("main-oneTeam-flex");
-        var data = [
-          {
-            image:
-              "https://resources.premierleague.com/photos/2021/04/07/368eb88d-0b76-46c0-bb57-da60f8a6fbcb/dermot-oleary-plps-challenge.png?width=500&height=333",
-            head: "communities",
-            note: "O'Leary: Do Wellbeing Stars Challenge to help others",
-            logo1:
-              "https://resources.premierleague.com/premierleague/badges/25/t20.png",
-            logo2:
-              "https://resources.premierleague.com/premierleague/badges/25/t20.png",
-            link: "",
-            note1: "Show your acts of kindness with Wellbeing Stars",
-            note2: "PL Primary Stars celebrates free books landmark",
-            link1: "",
-            link2: "",
-          },
-          {
-            image:
-              "https://resources.premierleague.com/photos/2021/04/02/557075b1-8eca-47be-9504-60113c6e83a4/WAOT-Man-Utd-Wes-Brown.png?width=500&height=333",
-            head: "communities",
-            note: "Man Utd Foundation continues support for local families",
-            logo1:
-              "https://resources.premierleague.com/premierleague/badges/25/t20.png",
-            logo2:
-              "https://resources.premierleague.com/premierleague/badges/25/t20.png",
-            link: "",
-            note1:
-              "The Foundation and FareShare donate over 380,000 food items",
-            note2: "Coronavirus: Latest on how clubs support community",
-            link1: "",
-            link2: "",
-          },
-          {
-            image:
-              "https://resources.premierleague.com/photos/2021/03/31/a981bcc1-498c-49c4-9636-b41845768faa/WAOT-Southampton-Michael.png?width=500&height=333",
-            head: "communities",
-            note: "How Southampton made Michael feel part of a team",
-            logo1:
-              "https://resources.premierleague.com/premierleague/badges/25/t20.png",
-            logo2:
-              "https://resources.premierleague.com/premierleague/badges/25/t20.png",
-            link: "",
-            note1: "Saints Foundation: Michael’s Story",
-            note2: "Coronavirus: Latest on how clubs support community",
-            link1: "",
-            link2: "",
-          },
-        ];
+      // Data function
+      function showDiv(data, div) {
         data.forEach((el) => {
           var div1 = document.createElement("div");
           div1.setAttribute("class", "main-oneteam-flex");
@@ -689,7 +1126,201 @@
           div.appendChild(div1);
         });
       }
-      showDiv();
+
+      //weAreOneTeam
+      function weAreOneTeam() {
+        var div = document.getElementById("main-oneTeam-flex");
+        var teamdata = [
+          {
+            image:
+              "https://resources.premierleague.com/photos/2021/04/07/368eb88d-0b76-46c0-bb57-da60f8a6fbcb/dermot-oleary-plps-challenge.png?width=500&height=333",
+            head: "communities",
+            note: "O'Leary: Do Wellbeing Stars Challenge to help others",
+            logo1: "./img/copy_logo.png",
+            logo2: "./img/copy_logo.png",
+            link: "",
+            note1: "Show your acts of kindness with Wellbeing Stars",
+            note2: "PL Primary Stars celebrates free books landmark",
+            link1: "",
+            link2: "",
+          },
+          {
+            image:
+              "https://resources.premierleague.com/photos/2021/04/02/557075b1-8eca-47be-9504-60113c6e83a4/WAOT-Man-Utd-Wes-Brown.png?width=500&height=333",
+            head: "communities",
+            note: "Man Utd Foundation continues support for local families",
+            logo1:
+              "https://resources.premierleague.com/premierleague/badges/25/t1.png",
+            logo2: "./img/copy_logo.png",
+            link: "",
+            note1:
+              "The Foundation and FareShare donate over 380,000 food items",
+            note2: "Coronavirus: Latest on how clubs support community",
+            link1: "",
+            link2: "",
+          },
+          {
+            image:
+              "https://resources.premierleague.com/photos/2021/03/31/a981bcc1-498c-49c4-9636-b41845768faa/WAOT-Southampton-Michael.png?width=500&height=333",
+            head: "communities",
+            note: "How Southampton made Michael feel part of a team",
+            logo1:
+              "https://resources.premierleague.com/premierleague/badges/25/t20.png",
+            logo2: "./img/copy_logo.png",
+            link: "",
+            note1: "Saints Foundation: Michael’s Story",
+            note2: "Coronavirus: Latest on how clubs support community",
+            link1: "",
+            link2: "",
+          },
+        ];
+        showDiv(teamdata, div);
+      }
+      weAreOneTeam();
+
+      function latestNews() {
+        var div = document.getElementById("main-latestNews-flex");
+
+        var data = [
+          {
+            image:
+              "https://resources.premierleague.com/photos/2021/04/13/148976a0-70c2-4711-b9ed-3bab7056ea17/EVETOT.jpg?width=500&height=333",
+            head: "Preview: Everton v Spurs",
+            note: "Everton eye first Premier League double over Spurs",
+            logo1: "./img/play_logo.png",
+            logo2: "./img/play_logo.png",
+            link: "",
+            note1: "Flashback: Spurs hit six past Everton",
+            note2: "Classic match: Arteta inspires Everton win at Spurs",
+            link1: "",
+            link2: "",
+          },
+          {
+            image:
+              "https://resources.premierleague.com/photos/2021/04/13/512871b6-44bb-480d-a29e-71c14a6c15b9/ShearerTOTW-LeadTeamplate-MW31.png?width=500&height=333",
+            head: "Feature",
+            note: "Shearer: Pogba was unplayable against Spurs",
+            logo1:
+              "https://resources.premierleague.com/premierleague/badges/25/t1.png",
+            logo2: "./img/play_logo.png",
+            link: "",
+            note1: "Cavani or Pogba? Our Man of the Match was...",
+            note2: "Saint-Maximin made Newcastle a different team",
+            link1: "",
+            link2: "",
+          },
+          {
+            image:
+              "https://resources.premierleague.com/photos/2020/09/16/27361830-f929-44c8-b034-527bb501d39a/Anthony-Taylor.jpg?width=500&height=333",
+            head: "Referees",
+            note: "Match officials for Matchweek 32",
+            logo1: "./img/copy_logo.png",
+            logo2: "./img/copy_logo.png",
+            link: "",
+            note1: "VAR - Frequently Asked Questions",
+            note2: "How offsides are determined by VAR",
+            link1: "",
+            link2: "",
+          },
+        ];
+
+        showDiv(data, div);
+      }
+      latestNews();
+
+      function FPLNews() {
+        var div = document.getElementById("main-FPLnews-flex");
+
+        var data = [
+          {
+            image:
+              "https://resources.premierleague.com/photos/2021/04/15/61412697-aa4a-49ce-8def-b3c5be5d6a2b/GettyImages-1231434479.jpg?width=500&height=333",
+            head: "Fantasy Premier League",
+            note: "Who to captain in GW32? What the experts say",
+            logo1:
+              "https://resources.premierleague.com/premierleague/badges/25/t6.png",
+            logo2: "./img/copy_logo.png",
+            link: "",
+            note1: "Gallery - players train ahead of Everton trip",
+            note2: "he Scout's panel of FPL experts",
+            link1: "",
+            link2: "",
+          },
+          {
+            image:
+              "https://resources.premierleague.com/photos/2021/04/13/b51e2e16-928d-4af3-9cea-a2ab0e48230e/2021-03-13T192456Z_400556029_UP1EH3D1HXKLW_RTRMADP_3_SOCCER-ENGLAND-EVE-BUR-REPORT.JPG?width=500&height=333",
+            head: "Fantasy Premier League",
+            note: "FPL team news: Calvert-Lewin to miss Gameweek 32",
+            logo1:
+              "https://resources.premierleague.com/premierleague/badges/25/t11.png",
+            logo2:
+              "https://resources.premierleague.com/premierleague/badges/25/t39.png",
+            link: "",
+            note1: "Everton boss delivers team news update",
+            note2: "Injury update on Neto, Marcal and Jonny",
+            link1: "",
+            link2: "",
+          },
+          {
+            image:
+              "https://resources.premierleague.com/photos/2021/04/15/d75f6c01-fe27-46ea-a276-ee1dcfc0a9c7/c59qa3wb.jpg?width=500&height=333",
+            head: "Fantasy Premier League",
+            note: "Scout Selection: Iheanacho can extend scoring streak",
+            logo1: "./img/copy_logo.png",
+            logo2: "./img/play_logo.png",
+            link: "",
+            note1: "GW32 Differentials: Ricardo Pereira",
+            note2: "FPL Gameweek 32 Kings to watch",
+            link1: "",
+            link2: "",
+          },
+          {
+            image:
+              "https://resources.premierleague.com/photos/2019/08/08/d5a7ca63-bb14-4d08-b6e0-24d5a526eb8b/audioboomgraphics_editorial_964x643.png?width=500&height=333",
+            head: "Fantasy Premier League",
+            note:
+              "Official FPL Podcast: Backing the Baggies and upcoming blanks",
+            logo1: "./img/play_logo.png",
+            logo2: "./img/play_logo.png",
+            link: "",
+            note1: "FPL Gameweek 32 Kings to watch",
+            note2: "FPL Gameweek 32 Differentials",
+            link1: "",
+            link2: "",
+          },
+          {
+            image:
+              "https://resources.premierleague.com/photos/2021/04/13/5a35d40b-a19d-45f2-bdae-cbc07040825d/BudKingsToWatch_FPL_Lead.png?width=500&height=333",
+            head: "Fantasy Premier League",
+            note: "GW32 Kings to watch: Alexandre Lacazette",
+            logo1:
+              "https://resources.premierleague.com/premierleague/badges/25/t3.png",
+            logo2: "./img/play_logo.png",
+            link: "",
+            note1: "Arteta on... Aubameyang, Odegaard, Slavia",
+            note2: "FPL Gameweek 32 Differentials",
+            link1: "",
+            link2: "",
+          },
+          {
+            image:
+              "https://resources.premierleague.com/photos/2021/04/14/772f8570-a95d-4753-b971-8b1b8901f909/GettyImages-1232114734.jpg?width=500&height=333",
+            head: "Fantasy Premier League",
+            note: "GW32 Differentials: Paul Pogba",
+            logo1: "./img/copy_logo.png",
+            logo2:
+              "https://resources.premierleague.com/premierleague/badges/25/t1.png",
+            link: "",
+            note1: "Shearer: Pogba was unplayable against Spurs",
+            note2: "Early team news for Granada second leg",
+            link1: "",
+            link2: "",
+          },
+        ];
+
+        showDiv(data, div);
+      }
+      FPLNews();
     </script>
   </body>
 </html>
