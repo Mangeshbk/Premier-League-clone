@@ -17,10 +17,10 @@ function tableData() {
  <div id="sorting">
    <div class="sort1">
      <label for=""><i>Filter by Competition</i></label>
-      <select id="sort" onchange="change()">
+      <select id="sort" onchange="change1()">
       <option name="Premier" value="Premier">Premier League</option>
-      <option name="FA" value="FA">FA Cup</option>
-      <option name="EFL" value="EFL">EFL Cup</option>
+      <option name="ascend" value="ascend">Ascending Order</option>
+      <option name="descend" value="descend">Descending Order</option>
       <option name="Champions" value="Champions">UEFA Champions League</option>
       <option name="Europa" value="Europa">UEFA Europa League</option>
     </select>
@@ -137,8 +137,8 @@ function tableData() {
         records[i].goalsFor
       }</label><label id="lbl8">${
         records[i].goalsAgainst
-      }</label><label id="lbl9">+${
-        records[i].goalsAgainst
+      }</label><label id="lbl9" style="font-weight: bold">${
+        records[i].gd
       }</label><label id="lbl10" style="font-weight: bold">${
         records[i].points
       }</label><label id="lbl11"><img src="${
