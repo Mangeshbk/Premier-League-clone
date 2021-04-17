@@ -26,7 +26,7 @@ function headerSec() {
   <a href="index.html">Home</a>
   <a href="#">Players</a>
   <a href="#">Fixtures</a>
-  <a href="#">Managers</a>
+  <a href="manager.html">Managers</a>
   <a href="#">Results</a>
   <a href="#">News</a>
   <a href="tables.html">Tables</a>
@@ -149,7 +149,7 @@ function headerSec() {
           <button>Tickets</button>
           <button>Clubs</button>
           <button>Players</button>
-          <button>Managers</button>
+          <button><a href="manager.html" style="text-decoration:none;color:#76766f">Manager</a></button>
           <button>News</button>
           <button>Social</button>
           <button>Youth</button>

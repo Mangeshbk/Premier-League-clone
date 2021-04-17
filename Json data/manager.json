@@ -1,0 +1,166 @@
+{
+  "name": "Premier League 2020/21",
+  "managers": [
+    {
+      "name": "Mikel Arteta",
+      "country": "Arsenal",
+      "nation": "Spain",
+      "image": "./img/img_icon1.png",
+      "flag": "./img/spain.jpg"
+    },
+    {
+      "name": "Dien Smith",
+      "country": "Aston Villa",
+      "nation": "England",
+      "image": "./img/img_icon2.png",
+      "flag": "./img/england.png"
+    },
+    {
+      "name": "Graham Potter",
+      "country": "Brighton and Hove Albion",
+      "nation": "England",
+      "image": "./img/img_icon3.png",
+      "flag": "./img/england.png"
+    },
+    {
+      "name": "Sean Syche",
+      "country": "Burnley",
+      "nation": "England",
+      "image": "./img/img_icon4.png",
+      "flag": "./img/england.png"
+    },
+    {
+      "name": "Thomas Tuchel",
+      "country": "Chelsea",
+      "nation": "Germany",
+      "image": "./img/img_icon5.png",
+      "flag": "./img/germany.png"
+    },
+    {
+      "name": "Frank Lampard",
+      "country": "Chelsea",
+      "nation": "England",
+      "image": "./img/img_icon5.png",
+      "flag": "./img/england.png"
+    },
+    {
+      "name": "Roy Hodgson",
+      "country": "Crystal Palace",
+      "nation": "England",
+      "image": "./img/img_icon6.png",
+      "flag": "./img/england.png"
+    },
+    {
+      "name": "Carlo Ancelotti",
+      "country": "Everton",
+      "nation": "Italy",
+      "image": "./img/img_icon7.png",
+      "flag": "./img/italy.png"
+    },
+    {
+      "name": "Scott Parker",
+      "country": "Fulham",
+      "nation": "England",
+      "image": "./img/img_icon8.png",
+      "flag": "./img/england.png"
+    },
+    {
+      "name": "Marcelo Bielsa",
+      "country": "Leeds United",
+      "nation": "Argentina",
+      "image": "./img/img_icon9.png",
+      "flag": "./img/argentina.flag.png"
+    },
+    {
+      "name": "Brendon Rodgers",
+      "country": "Leicester City",
+      "nation": "Northern Ireland",
+      "image": "./img/img_icon10.png",
+      "flag": "./img/ireland.png"
+    },
+    {
+      "name": "Jurgen Klopp",
+      "country": "Liverpool",
+      "nation": "Germany",
+      "image": "./img/img_icon11.png",
+      "flag": "./img/germany.png"
+    },
+    {
+      "name": "Josep Guardiola",
+      "country": "Manchester City",
+      "nation": "Spain",
+      "image": "./img/img_icon12.png",
+      "flag": "./img/spain.jpg"
+    },
+    {
+      "name": "Ole Gunnar Solskajaer",
+      "country": "Manchester United",
+      "nation": "Norway",
+      "image": "./img/img_icon13.png",
+      "flag": "./img/norway.png"
+    },
+    {
+      "name": "Steve Bruce",
+      "country": "Newcastle United",
+      "nation": "England",
+      "image": "./img/img_icon14.png",
+      "flag": "./img/england.png"
+    },
+    {
+      "name": "Paul Heckingbottom",
+      "country": "Sheffield United",
+      "nation": "England",
+      "image": "./img/img_icon15.png",
+      "flag": "./img/england.png"
+    },
+    {
+      "name": "Chris Wilder",
+      "country": "Sheffield United",
+      "nation": "England",
+      "image": "./img/img_icon15.png",
+      "flag": "./img/england.png"
+    },
+    {
+      "name": "Ralph Hasenhuttl",
+      "country": "Southampton",
+      "nation": "Austria",
+      "image": "./img/img_icon16.png",
+      "flag": "./img/austria.png"
+    },
+    {
+      "name": "Josse Maurinho",
+      "country": "Tottenham Hotspur",
+      "nation": "Portugal",
+      "image": "./img/img_icon17.png",
+      "flag": "./img/portugal.png"
+    },
+    {
+      "name": "Sam Allardyce",
+      "country": "West Bromwich Albion",
+      "nation": "England",
+      "image": "./img/img_icon18.png",
+      "flag": "./img/england.png"
+    },
+    {
+      "name": "Slaven Bilic",
+      "country": "West Bromwich Albion",
+      "nation": "Croatia",
+      "image": "./img/img_icon18.png",
+      "flag": "./img/crotia.png"
+    },
+    {
+      "name": "David Moyes",
+      "country": "West Ham United",
+      "nation": "Scotland",
+      "image": "./img/img_icon19.png",
+      "flag": "./img/scotland.png"
+    },
+    {
+      "name": "Nuno Expirito Santo",
+      "country": "wolverhampton Wanderers",
+      "nation": "Portugal",
+      "image": "./img/img_icon20.png",
+      "flag": "./img/portugal.png"
+    }
+  ]
+}

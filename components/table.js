@@ -26,7 +26,7 @@ function tableData() {
     </select>
 
    </div>
-   <div class="sort1">          <label for=""><i>Filter by Home or Away</i></label>
+   <div class="sort1">          <label for=""><i>Filter by Season</i></label>
       <select id="sort2" onchange="changeTwo()">
       <option name="Season" value="Season">All Season</option>
       <option name="2020/21" value="2020/21">2020/21</option>
@@ -47,7 +47,7 @@ function tableData() {
       <option name="1993/94" value="1993/94">1993/94</option>     <option name="1992/93" value="1992/93">1992/93</option>      
 </select></div>
    <div class="sort1">
-          <label for=""><i>Filter by Home or Away</i></label>
+          <label for=""><i>Filter by Matchweeks</i></label>
       <select id="sort3" onchange="changeThree()">
       <option name="AllMatchweeks" value="AllMatchweeks">All Matchweeks</option>
       <option name="1" value="1">1</option>
