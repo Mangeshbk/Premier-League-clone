@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: PremierSans-Regular, Arial, Helvetica Neue, Helvetica, sans-serif;
+}
+#container {
+  width: 100%;
+  margin: auto;
+  margin-top: 0px;
+  height: 200px;
+  background-color: #37003c;
+  background-image: url("https://www.premierleague.com/resources/prod/3a85d04-3470/i/bg-elements/pl-footer-m-bottom.svg");
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 250px;
+}
+#container h1 {
+  font-size: 73px;
+  color: #ffffff;
+  /* margin: 5% 0% 2% 5%; */
+  padding: 3% 5%;
+}
+#container button {
+  float: right;
+  padding: 0.8% 1.5%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  margin-right: 7%;
+  margin-top: -6%;
+  cursor: pointer;
+  font-size: 18px;
+}
+#container button:hover {
+  color: white;
+  background: #ef297c;
+}
+.upper-border {
+  height: 5px;
+  width: 86%;
+  margin: 5vh auto;
+  background: linear-gradient(to left, #ff2882, #963cff);
+}
+.ticket-note {
+  width: 90%;
+  height: auto;
+  margin: auto;
+}
+.ticket-note h4 {
+  margin: 2vh 0;
+}
+.ticket-note p {
+  line-height: 24px;
+}
+.ticket-note p a {
+  text-decoration: none;
+  color: #ef297c;
+}
+.ticket-note p a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #ef297c;
+}
+
+.club-ticket {
+  width: 90%;
+  margin: auto;
+}
+.club-ticket h2 {
+  font-size: 24px;
+}
+#club-data {
+  display: flex;
+  gap: 0.5%;
+  flex-wrap: wrap;
+  margin: 1 auto;
+}
+.club-data {
+  width: 24%;
+  margin: 1% auto;
+  cursor: pointer;
+  /* border: 1px solid green;  */
+}
+.club-data > div > img {
+  max-width: 100%;
+  max-height: 60%;
+  transition: transform 1s;
+  overflow: hidden;
+  display: inline-block;
+}
+.club-data > div > img:hover {
+  transform: scale(1.05);
+}
+.club-data > a {
+  text-decoration: none;
+  color: #e90052;
+  font-size: 14px;
+  font-style: italic;
+}
+.club-data > a > p {
+  color: #242424;
+  font-size: 18px;
+  line-height: 24px;
+  font-style: normal;
+  font-family: PremierSans-Regular, Arial, Helvetica Neue, Helvetica, sans-serif;
+}
+.club-data:hover > a > p {
+  text-decoration: underline;
+}
+.hover-border {
+  width: 0%;
+  height: 5px;
+  position: absolute;
+  transition: all 1000ms ease-in-out;
+  transform: scaleX(0);
+  background: linear-gradient(to left, #ff2882, #963cff);
+}
+.club-data:hover div > img,
+.hover-border {
+  transform: scale(1.05);
+}
+.club-data:hover .hover-border {
+  width: 21.5%;
+  transform: scaleX(1);
+}
