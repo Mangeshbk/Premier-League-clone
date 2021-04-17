@@ -34,7 +34,7 @@ function managersData() {
 </select></div>
    <div class="sort1">
           <label for=""><i>Filter by Clubs</i></label>
-      <select id="sort3" onchange="changeThree()">
+      <select id="sort3" onchange="changeClub()">
       <option name="AllMatchweeks" value="AllMatchweeks">All Clubs</option>
       <option name="Arsenal" value="Arsenal">Arsenal</option>
       <option name="Aston Villa" value="Aston Villa">Aston Villa</option>
@@ -64,7 +64,6 @@ function managersData() {
 </div>
 
 
-
 `;
 
   async function teams() {
@@ -86,6 +85,7 @@ function managersData() {
       displayData.appendChild(div);
     }
   }
+
   teams();
   return data;
 }

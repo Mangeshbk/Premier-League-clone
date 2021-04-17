@@ -32,10 +32,8 @@
   border-radius: 50px;
   margin-left: 80px;
   margin-top: 70px;
-  /* transition: box-shadow 300ms ease-out; */
   cursor: pointer;
 }
-
 #sharebtn {
   background-color: white;
   margin-left: 300px;
