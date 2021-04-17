@@ -1,0 +1,31 @@
+* {
+  font-family: PremierSans-Regular, Arial, Helvetica Neue, Helvetica, sans-serif;
+  margin: 0%;
+  padding: 0%;
+}
+
+#navbar {
+  height: 70px;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-left: 70px;
+}
+
+#navbar > label {
+  color: #76766f;
+  font-size: 11px;
+  padding-top: 25px;
+}
+
+#navbar > #img1 {
+  padding-top: 14px;
+  background-color: transparent;
+}
+
+#navbar > #img1 > a > img {
+  width: 30px;
+  margin-left: 20px;
+}
+#navbar > #img1 > a > img:hover {
+  transform: scale(1.4);
+}

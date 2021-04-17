@@ -1,0 +1,109 @@
+#information {
+    width: 55%;
+    height: 80px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#information>h1 {
+    font-family: "PremierSans-Bold", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+}
+
+#information>h1::selection {
+    background-color: #ff2882;
+    color: white;
+}
+
+#information>p::selection {
+    background-color: #ff2882;
+    color: white;
+}
+
+#rows {
+    width: 54%;
+    height: 40px;
+    margin-bottom: 10px;
+    border: 1px;
+    float: left;
+    margin-left: 23%;
+    display: grid;
+    grid-template: "div div div";
+}
+
+#rows>div>input {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    float: left;
+}
+
+#rows>div>label {
+    font-size: 15px;
+}
+
+.p1 {
+    float: left;
+    width: 60%;
+    text-align: left;
+    padding-top: 20px;
+    margin-left: 20%;
+    line-height: 20px;
+    padding-bottom: 20px;
+}
+
+#hr5 {
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#terms {
+    width: 60%;
+    height: 35px;
+    margin-left: 29.5%;
+    margin-top: 50px;
+    float: left;
+}
+
+#terms>input {
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-left: 50px;
+}
+
+#para {
+    margin-left: 120px;
+    padding-top: 12px;
+}
+
+#para>a {
+    color: #e90052;
+    text-decoration: none;
+}
+
+p::selection {
+    background: #e90052;
+    color: #fff;
+}
+
+#para>a::selection {
+    background: #e90052;
+    color: #fff;
+}
+
+#sec_button1 {
+    background: #37003c;
+    color: #fff;
+    width: 20%;
+    height: 40px;
+    margin-left: 40%;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+}

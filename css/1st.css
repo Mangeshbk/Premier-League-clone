@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#strip {
+    width: 70.5%;
+    height: 40px;
+    background-color: #e90052;
+    margin-top: 95px;
+    margin-left: 14.2%;
+}
+
+h1 {
+    color: #fff;
+    font-family: "PremierSans-Light", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding-top: 11px;
+    padding-left: 20px;
+    font-weight: 200;
+}
+
+span {
+    padding-left: 405px;
+}
+
+#signin-container {
+    width: 67.8%;
+    height: 300px;
+    margin-left: 15.5%;
+    margin-top: 30px;
+}
+
+#register {
+    width: 49%;
+    float: left;
+    height: 100%;
+    background-color: #e4e4e4;
+}
+
+#sign-in {
+    width: 49%;
+    height: 100%;
+    float: left;
+    margin-right: 2%;
+}
+
+h2 {
+    font-size: 15px;
+    font-family: "PremierSans-Bold", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+#register>li {
+    list-style: none;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    font-size: 12px;
+    font-family: "PremierSans-Bold", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 700;
+    color: #242424;
+}
+
+#register>p {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+#register>button {
+    width: 90%;
+    height: 47px;
+    margin-left: 5%;
+    margin-top: 20px;
+    background: #e90052;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+#register>button:hover {
+    background-color: #b60040;
+}
+
+label {
+    font-weight: bold;
+    color: #242424;
+}
+
+label::selection {
+    background-color: #ff2882;
+    color: white;
+}
+
+input::selection {
+    background-color: #ff2882;
+    color: white;
+}
+
+h1::selection {
+    background-color: #ff2882;
+    color: white;
+}
+
+h2::selection {
+    background-color: #ff2882;
+    color: white;
+}
+
+p::selection {
+    background-color: #ff2882;
+    color: white;
+}
+
+li::selection {
+    background-color: #ff2882;
+    color: white;
+}
+
+a::selection {
+    background-color: #ff2882;
+    color: white;
+}
+
+button::selection {
+    background-color: #ff2882;
+    color: white;
+}
+
+img::selection {
+    background-color: #ff2882;
+}
+
+span::selection {
+    background-color: #ff2882;
+    color: white;
+}
+
+input {
+    margin-top: 5px;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 47px;
+    border: none;
+    border-bottom: 1px solid #76766f;
+    background-color: #e8e8e8;
+    padding-left: 15px;
+    letter-spacing: normal;
+    word-spacing: normal;
+}
+
+#sign-in>div>a {
+    text-decoration: none;
+    color: #e90052;
+}
+
+#sigin-btn {
+    width: 50%;
+    height: 44px;
+    float: left;
+    margin-left: 1%;
+    margin-top: 5px;
+}
+
+#forget {
+    width: 49%;
+    height: 20px;
+    float: left;
+    margin-top: 20px;
+}
+
+#sigin-btn>button {
+    width: 100%;
+    height: 100%;
+    background-color: #37003c;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+#sigin-btn>button:hover {
+    background-color: black;
+}
+
+#login-info {
+    width: 100%;
+    height: 20px;
+    float: left;
+    margin-top: 35px;
+}
+
+#login-info>hr {
+    width: 25%;
+    float: left;
+    margin-top: 9.5px;
+}
+
+#login-info>p {
+    float: left;
+}
+
+hr:nth-child(1) {
+    margin-left: 95px;
+}
+
+hr:nth-child(2) {
+    padding-left: 10px;
+}
+
+#login-options {
+    margin-top: 30px;
+    width: 48%;
+    height: 80px;
+    float: left;
+    display: grid;
+    grid-template: "button button" " button button";
+    gap: 10px;
+}
+
+#login-options>button {
+    border: none;
+    outline: none;
+    border-radius: 2px;
+}
+
+#login-options>button>img {
+    height: 60%;
+    float: left;
+    padding-left: 80px;
+}
+
+#login-options>button>p {
+    padding-top: 5px;
+    float: left;
+    margin-left: 10px;
+}
+
+.fb-login {
+    color: white;
+    background-color: #2b5e9d;
+    position: relative;
+}
+
+.twitter-login {
+    color: white;
+    background-color: #4099ff;
+}
+
+.google-login {
+    color: white;
+    background-color: #d94c4c;
+}
+
+.apple-login {
+    color: white;
+    background-color: black;
+}
+
+.fb-login:hover {
+    background-color: #244d80;
+}
+
+.twitter-login:hover {
+    background-color: #3785dd;
+}
+
+.google-login:hover {
+    background-color: #b33f3f;
+}
+
+.apple-login:hover {
+    background-color: rgb(39, 38, 38);
+}
