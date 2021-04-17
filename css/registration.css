@@ -1,0 +1,262 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    #heading {
+        width: 90%;
+        height: 40px;
+        background-color: #e90052;
+        color: white;
+        margin: auto;
+        font-size: 12px;
+        margin-top: 20px;
+    }
+    
+    #heading>h1 {
+        padding-left: 50px;
+        padding-top: 5px;
+    }
+    
+    #flow {
+        width: 35%;
+        height: 55px;
+        margin: auto;
+        margin-top: 30px;
+    }
+    
+    #before>div {
+        float: left;
+    }
+    
+    #hrs1 {
+        width: 150px;
+        float: left;
+        margin-top: 25px;
+    }
+    
+    #img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    #icon-about {
+        width: 40%;
+        height: 15px;
+        margin: auto;
+        margin-top: 10px;
+    }
+    
+    #icon-about>p {
+        float: left;
+        color: #242424;
+    }
+    
+    .pz {
+        padding-right: 80px;
+    }
+    
+    #hr1 {
+        width: 90%;
+        margin: auto;
+        margin-top: 60px;
+    }
+    
+    #hr2 {
+        width: 90%;
+        margin: auto;
+        margin-top: 40px;
+    }
+    
+    #h1s {
+        margin-top: 50px;
+        margin-left: 250px;
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    
+    #firstName {
+        width: 63%;
+        height: 60px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    
+    #firstName>label,
+    #firstName>input,
+    #firstName>img,
+    #gender>label,
+    #gender>input,
+    #gender>img,
+    #DOB>label,
+    #DOB>input,
+    #DOB>img,
+    #select-country>label,
+    #select-country>input,
+    #select-country>img {
+        float: left;
+        font-family: "PremierSans-Bold", Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-weight: bold;
+    }
+    
+    #firstName>label,
+    #gender>label,
+    #DOB>label,
+    #select-country>label {
+        width: 200px;
+        color: #242424;
+        padding-top: 10px;
+    }
+    
+    #firstName>label>span,
+    #gender>label>span,
+    #DOB>label>span,
+    #select-country>label>span {
+        font-size: 12px;
+        color: #e90052;
+    }
+    
+    #firstName>input,
+    #gender>input,
+    #DOB>input,
+    #select-country>input {
+        margin-top: 5px;
+        margin-bottom: 30px;
+        width: 550px;
+        height: 47px;
+        border: none;
+        border-bottom: 1px solid #76766f;
+        background-color: #e8e8e8;
+        letter-spacing: normal;
+        word-spacing: normal;
+        position: relative;
+    }
+    
+    #firstName>img {
+        margin-left: 10px;
+    }
+    
+    #firstName>img:nth-child(2) {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .eye {
+        position: absolute;
+        margin-left: -80px;
+        margin-top: 25px;
+    }
+    
+    #show-btn {
+        width: 70px;
+        height: 30px;
+        background-color: white;
+        border: none;
+        outline: none;
+    }
+    
+    #gender {
+        width: 63%;
+        height: 60px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    
+    #gender>label {
+        float: left;
+    }
+    
+    #gender>input {
+        width: 30px;
+        height: 30px;
+    }
+    
+    #gender>span {
+        float: left;
+        margin-left: 20px;
+        padding-top: 10px;
+        font-weight: bold;
+        padding-right: 100px;
+    }
+    
+    #gender>span:nth-child(4) {
+        padding-right: 10px;
+    }
+    
+    #gender>img {
+        float: right;
+    }
+    
+    #DOB {
+        width: 63%;
+        height: 60px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    
+    #select-country {
+        width: 63%;
+        height: 60px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    
+    #select-country>img {
+        margin-left: 10px;
+    }
+    
+    #DOB>img {
+        margin-left: 10px;
+    }
+    
+    select {
+        float: left;
+        margin-top: 5px;
+        margin-bottom: 30px;
+        width: 570px;
+        height: 47px;
+        border: none;
+        border-bottom: 1px solid #76766f;
+        background-color: #e8e8e8;
+        letter-spacing: normal;
+        word-spacing: normal;
+        position: relative;
+        padding-left: 20px;
+    }
+    
+    #select-country>label>span {
+        font-size: 12px;
+        color: #e90052;
+        float: left;
+    }
+    
+    #select-country>label {
+        float: left;
+        width: 200px;
+        color: #242424;
+        padding-top: 10px;
+    }
+    
+    #next-btn1 {
+        width: 25%;
+        height: 40px;
+        margin-top: 20px;
+        margin-left: 35%;
+        color: white;
+        background: #37003c;
+        border: none;
+        outline: none;
+    }
+    
+    #next-btn1:hover {
+        background-color: black;
+    }
+    
+    label::selection {
+        background: #e90052;
+        color: #fff;
+    }
+    
+    input {
+        padding-left: 20px;
+    }
