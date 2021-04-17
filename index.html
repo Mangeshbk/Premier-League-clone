@@ -15,7 +15,13 @@
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     />
-
+    <link rel="stylesheet" href="./components/styles/header.css" />
+    <link rel="stylesheet" href="./components/styles/footer.css" />
+    <link rel="stylesheet" href="./components/styles/header1.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script
       src="https://kit.fontawesome.com/44a29f837f.js"
       crossorigin="anonymous"
@@ -23,7 +29,16 @@
 
     <link rel="stylesheet" href="./components/styles/landing_page.css" />
   </head>
+
+  <script type="module">
+    import headerIcon from "./components/header.js";
+    import headerSec from "./components/header1.js";
+    import footer from "./components/footer.js";
+  </script>
   <body>
+    <div id="header"></div>
+    <div id="header1"></div>
+
     <div id="landing">
       <!--left side fixed  ----------------- -->
       <div id="left-land">
@@ -199,7 +214,7 @@
             </div>
           </div>
           <!-- ---------------------------------- -->
-          <div class="landing-fixture-table">
+          <div class="landing-fixture-">
             <p class="class=fixture-date">Thursday 22 April</p>
             <div class="landing-fixture-team">
               <p
@@ -247,7 +262,7 @@
 
           <!-- --------------------------------------------- -->
 
-          <div class="landing-fixture-table">
+          <div class="landing-fixture-">
             <p class="class=fixture-date">Friday 23 April</p>
             <div class="landing-fixture-team">
               <p
@@ -294,7 +309,7 @@
           </div>
 
           <!-- ------------------------------------------------ -->
-          <div class="landing-fixture-table">
+          <div class="landing-fixture-">
             <p class="class=fixture-date">Saturday 24 April</p>
             <div class="landing-fixture-team">
               <p
@@ -437,12 +452,12 @@
           </div>
         </div>
         <!-- --------------------------------- -->
-        <div class="landing-table left-land">
-          <div class="landing-table-head">
+        <div class="landing- left-land">
+          <div class="landing--head">
             <img src="img/PL_ranking_logo.png" alt="" />
             <button>First Team</button>
           </div>
-          <div class="landing-table-ranking">
+          <div class="landing--ranking">
             <table style="width: 95%">
               <thead style="color: #6c6c6c; font-size: 12px; margin: 1vh auto">
                 <th style="width: 12%; padding-top: 20px; padding-bottom: 10px">
@@ -465,7 +480,8 @@
             </table>
           </div>
           <div class="landing-table-bottom">
-            <a class="featured-player-profile" href="">View All Tables </a
+            <a class="featured-player-profile" href="tables.html"
+              >View All Tables </a
             ><span style="color: #e90052">&rarr;</span>
           </div>
         </div>
@@ -1027,7 +1043,6 @@
         <!-- ----------------- -->
       </div>
     </div>
-
-    <script src="./components/landingpage.js"></script>
   </body>
+  <script src="./components/landingpage.js"></script>
 </html>
