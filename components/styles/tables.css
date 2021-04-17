@@ -1,0 +1,197 @@
+* {
+  font-family: PremierSans-Regular, Arial, Helvetica Neue, Helvetica, sans-serif;
+  margin: 0%;
+  padding: 0%;
+}
+#bgtables {
+  margin: auto;
+  line-height: 35px;
+  height: 220px;
+  background-color: #6e0877;
+  background-image: url("https://www.premierleague.com/resources/prod/3a85d04-3470/i/bg-elements/pl-footer-m-bottom.svg");
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 250px;
+  margin-bottom: 20px;
+}
+#bgtables > h1 {
+  font-size: 65px;
+  color: white;
+  padding-top: 80px;
+  margin-left: 80px;
+}
+
+#bgtables > #sharebtn {
+  background-color: white;
+  float: right;
+  margin-right: 120px;
+  width: 72px;
+  height: 39px;
+  margin-top: -40px;
+  border-radius: 6px;
+  border: 0.5px solid white;
+  cursor: pointer;
+}
+#bgtables > #sharebtn:hover {
+  background-color: #ff2882;
+}
+
+#bgtables > #tablebtn99 {
+  margin-left: 80px;
+}
+
+#bgtables > #tablebtn99 > button {
+  margin-top: 66px;
+  padding-left: 30px;
+  margin-left: 5px;
+  cursor: pointer;
+  border-radius: 5px 5px 0px 0px;
+  padding-right: 30px;
+  height: 39px;
+  background-color: white;
+}
+
+#scores {
+  margin-left: 100px;
+  margin-right: 100px;
+  background-color: #fbfbfb;
+  height: 30px;
+  margin-top: 50px;
+  font-weight: bold;
+  font-size: 15px;
+  color: lightslategrey;
+  padding-top: 15px;
+}
+
+#scores > label {
+  margin-left: 33px;
+}
+
+#bodyContent > div {
+  background-color: #fbfbfb;
+}
+
+#bodyContent > div > span {
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 40px;
+  cursor: pointer;
+  padding-top: 15px;
+  padding-bottom: 17px;
+}
+
+#bodyContent > div > span:hover {
+  background-color: #ff2882;
+  color: white;
+  font-weight: bold;
+}
+#scoreDetails {
+  margin-left: 100px;
+  margin-right: 100px;
+  height: 40px;
+  padding-top: 10px;
+  border: 1px so3id lightslategrey;
+}
+
+#bodyContent > div > #lbl1 {
+  cursor: pointer;
+  width: 60px;
+  text-align: center;
+  display: inline-block;
+  height: 40px;
+  font-size: 15px;
+}
+
+#bodyContent > div > #lbl2 {
+  padding-left: 30px;
+  cursor: pointer;
+  font-size: 15px;
+  width: 330px;
+  display: inline-block;
+}
+
+#bodyContent > div > #lbl2:hover {
+  text-decoration: underline;
+}
+
+#bodyContent > div > #lbl3,
+#bodyContent > div > #lbl4,
+#bodyContent > div > #lbl5,
+#bodyContent > div > #lbl6,
+#bodyContent > div > #lbl7,
+#bodyContent > div > #lbl8,
+#bodyContent > div > #lbl9,
+#bodyContent > div > #lbl10 {
+  width: 64px;
+  text-align: center;
+  display: inline-block;
+  font-size: 15px;
+}
+
+#bgtables > #tablebtn99 > button:hover {
+  background-color: #ff2882;
+  color: #e8e8e8;
+}
+
+#sorting {
+  height: 60px;
+  margin-left: 100px;
+  margin-right: 100px;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+}
+
+#sorting > div {
+  height: 45px;
+  width: 200px;
+  float: left;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  display: block-inline;
+  cursor: pointer;
+}
+
+#sorting > div > label {
+  color: #963cff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#sort,
+#sort2,
+#sort3,
+#sort4 {
+  border: none;
+  font-weight: bold;
+  font-size: 17px;
+  cursor: pointer;
+  display: inline-block;
+  height: 32px;
+  width: 180px;
+}
+#lbl11 > img {
+  width: 160px;
+  margin-left: 25px;
+  display: inline-block;
+}
+
+#lbl11 > img:hover {
+  transform: scale(1.4);
+}
+
+#lbl2 > img:hover {
+  transform: scale(1.4);
+  cursor: pointer;
+}
+
+#lbl12 {
+  padding-left: 75px;
+}
+
+#lbl12 > img {
+  cursor: pointer;
+  width: 20px;
+  border-radius: 25px;
+  border: 1px solid lightslategray;
+}
