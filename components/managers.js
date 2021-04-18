@@ -5,7 +5,7 @@ function managersData() {
 
   data.innerHTML = `
 <div id="managers">
-    <h1>Managers</h1><input type="text" placeholder="Search.." name="search">
+    <h1>Managers</h1><input type="text" placeholder="Search.." name="search" id="inp">
   <button type="submit" id="search"><i class="fa fa-search"></i></button>
     <button id="sharebtn"><i class="fa fa-share-square-o"></i> &nbsp;Share</button>
 
@@ -34,7 +34,7 @@ function managersData() {
 </select></div>
    <div class="sort1">
           <label for=""><i>Filter by Clubs</i></label>
-      <select id="sort3" onchange="changeClub()">
+      <select id="sort3">
       <option name="AllMatchweeks" value="AllMatchweeks">All Clubs</option>
       <option name="Arsenal" value="Arsenal">Arsenal</option>
       <option name="Aston Villa" value="Aston Villa">Aston Villa</option>
@@ -73,9 +73,12 @@ function managersData() {
     // console.log(data);
 
     let { managers } = data;
-    console.log(managers);
+    // console.log(managers);
 
     var displayData = document.getElementById("bodyContent");
+
+    var input = document.getElementById("inp").value;
+    console.log(input);
     for (var i = 0; i < managers.length; i++) {
       console.log(managers[i]);
 

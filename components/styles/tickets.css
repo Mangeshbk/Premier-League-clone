@@ -24,6 +24,7 @@
   float: right;
   padding: 0.8% 1.5%;
   outline: none;
+  background-color: white;
   border: none;
   border-radius: 5px;
   margin-right: 7%;
@@ -32,7 +33,6 @@
   font-size: 18px;
 }
 #container button:hover {
-  color: white;
   background: #ef297c;
 }
 .upper-border {
