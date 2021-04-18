@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+* {
+margin: 0;
+padding: 0;
+}
+#container_anwar {
+width: 100%;
+margin: auto;
+margin-top: 0px;
+height: 200px;
+background-color: #37003c;
+background-image: url("https://www.premierleague.com/resources/prod/3a85d04-3470/i/bg-elements/pl-footer-m-bottom.svg");
+background-position: 0 100%;
+background-repeat: no-repeat;
+background-size: 100% 250px;
+}
+#container_anwar > h1 {
+font-size: 73px;
+color: #ffffff;
+margin: 2% 0% 0% 5%;
+padding: 3%;
+}
+

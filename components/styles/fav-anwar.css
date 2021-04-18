@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#club-container {
+    width: 55%;
+    height: 900px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#club-container>div {
+    width: 24.8%;
+    height: 150px;
+    float: left;
+    border: 1px solid gray;
+}
+
+#club-container>div>button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+#club-container>div>button>img {
+    float: left;
+    margin-left: 65px;
+    margin-bottom: 15px;
+}
+
+#club-container>div>button>p {
+    text-align: center;
+    width: 100%;
+    float: left;
+}
+
+.hr {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 50px;
+}
+
+#h2 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+#sec_button {
+    background: #267788;
+    color: #fff;
+    width: 20%;
+    height: 40px;
+    margin-left: 40%;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+}
+
+#others {
+    width: 60%;
+    height: 400px;
+    margin-left: 20%;
+    margin-top: 20px;
+    display: grid;
+    grid-template: 'div div div';
+}
+
+#other_club1>li>input {
+    width: 40px;
+    height: 40px;
+    margin-top: 13px;
+    float: left;
+}
+
+#other_club1>li,
+#other_club2>li,
+#other_club3>li {
+    color: black;
+    list-style-type: none;
+    background: white;
+}
+
+#club-container>div:nth-child(2),
+#club-container>div:nth-child(3),
+#club-container>div:nth-child(4) {
+    border-left: none;
+}
+
+#club-container>div:nth-child(5),
+#club-container>div:nth-child(6),
+#club-container>div:nth-child(7),
+#club-container>div:nth-child(9),
+#club-container>div:nth-child(10),
+#club-container>div:nth-child(11),
+#club-container>div:nth-child(13),
+#club-container>div:nth-child(14),
+#club-container>div:nth-child(15),
+#club-container>div:nth-child(17),
+#club-container>div:nth-child(18),
+#club-container>div:nth-child(19) {
+    border-top: none;
+    border-right: none;
+}
+
+#club-container>div:nth-child(8),
+#club-container>div:nth-child(12),
+#club-container>div:nth-child(16),
+#club-container>div:nth-child(20),
+#club-container>div:nth-child(21) {
+    border-top: none;
+}
+
+#otherclubs {
+    width: 54%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.row1 {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    float: left;
+    margin-left: 100px;
+}
+
+.row1>input {
+    float: left;
+    width: 30px;
+    height: 30px;
+}
+
+.row1>input:nth-child(2) {
+    padding-left: 100px;
+}
+
+.row1>label {
+    font-size: 15px;
+    float: left;
+    padding-left: 15px;
+    padding-top: 5px;
+}
+
+#heading {
+    width: 90%;
+    height: 40px;
+    background-color: #e90052;
+    color: white;
+    margin: auto;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+#heading>h1 {
+    padding-left: 50px;
+    padding-top: 5px;
+}
+
+#flow {
+    width: 35%;
+    height: 55px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+#before>div {
+    float: left;
+}
+
+#hrs1 {
+    width: 150px;
+    float: left;
+    margin-top: 25px;
+}
+
+#before>div>img {
+    width: 50px;
+    height: 50px;
+}
+
+#icon-about {
+    width: 40%;
+    height: 15px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+#icon-about>p {
+    float: left;
+    color: #242424;
+}
+
+.p {
+    padding-right: 80px;
+}
+
+#hr1 {
+    width: 90%;
+    margin: auto;
+    margin-top: 60px;
+}
+
+#hr2 {
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+#h1s {
+    margin-top: 50px;
+    margin-left: 250px;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
