@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#manage-container {
+    margin: auto;
+    margin-top: 50px;
+    height: 200px;
+    background-color: #37003c;
+    background-image: url('https://www.premierleague.com/resources/prod/3a85d04-3470/i/bg-elements/pl-footer-m-bottom.svg');
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 250px;
+}
+
+#manage-container>h1 {
+    color: white;
+    font-size: 4.1rem;
+    font-family: 'PremierSans-Bold', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    font-weight: normal;
+    font-weight: 600;
+    padding-top: 80px;
+    padding-left: 50px;
+}
+
+#manage-container>h1::selection {
+    background: #e90052;
+    color: #fff;
+}
+
+#manage-options {
+    width: 55%;
+    margin-top: 50px;
+    margin-left: 10%;
+    display: grid;
+    grid-template-columns: "div div div";
+    gap: 30px;
+    float: left;
+}
+
+#manage-options>div {
+    border: 1px solid black;
+    height: 170px;
+    border-width: 0 1px 1px;
+    border-style: solid;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-color: #e8e8e8;
+}
+
+#manage-option-hr {
+    border: 2px solid #e90052;
+    border-radius: 4px;
+}
+
+.manage-h2 {
+    padding-left: 30px;
+    padding-top: 20px;
+    font-family: 'PremierSans-Bold', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    color: #242424;
+}
+
+.update-button {
+    width: 92%;
+    margin-left: 4%;
+    height: 40px;
+    background: #e8e8e8;
+    color: #333;
+    outline: none;
+    border: none;
+    font-family: 'PremierSans-Regular', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.update-button:hover {
+    background: #e90052;
+    color: #fff;
+}
+
+#update-container {
+    width: 25%;
+    height: 200px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 50px;
+    background-color: #e4e4e4;
+}
+
+.update-container-btn {
+    width: 88%;
+    height: 40px;
+    margin-top: 25px;
+    margin-left: 6%;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+}
+
+#update-container-btn-1:hover {
+    background: #c40548;
+    color: #fff;
+}
+
+#update-container-btn-1 {
+    background: #e90052;
+    color: #fff;
+}
+
+#update-container-btn-2 {
+    background: #267788;
+    color: #fff;
+}
+
+#update-container-btn-2:hover {
+    background: #1d5661;
+    color: #fff;
+}
