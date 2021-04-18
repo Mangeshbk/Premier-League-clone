@@ -8,7 +8,6 @@ function managersData() {
     <h1>Managers</h1><input type="text" placeholder="Search.." name="search" id="inp">
   <button type="submit" id="search"><i class="fa fa-search"></i></button>
     <button id="sharebtn"><i class="fa fa-share-square-o"></i> &nbsp;Share</button>
-
     </div>
   
  <div id="sorting">
@@ -78,9 +77,15 @@ function managersData() {
     var displayData = document.getElementById("bodyContent");
 
     var input = document.getElementById("inp").value;
+
+    document.getElementById("search").addEventListener("click", (e) => {
+      // var input = document.getElementById("inp").value;
+      // console.log(input);
+    });
+
     console.log(input);
     for (var i = 0; i < managers.length; i++) {
-      console.log(managers[i]);
+      // console.log(managers[i]);
 
       var div = document.createElement("div");
       div.setAttribute("id", "managerDetails");
@@ -88,7 +93,6 @@ function managersData() {
       displayData.appendChild(div);
     }
   }
-
   teams();
   return data;
 }
