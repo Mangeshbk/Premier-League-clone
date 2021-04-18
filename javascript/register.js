@@ -1,10 +1,8 @@
 //console.log(registered_users)
 
-
-
 function body_conatiner() {
-    var div = document.getElementById('body-container')
-    div.innerHTML = `<div id="strip">
+  var div = document.getElementById("body-container");
+  div.innerHTML = `<div id="strip">
     <h1>Sign In <span>Register</span></h1>
 </div>
 <div id="signin-container">
@@ -38,45 +36,41 @@ function body_conatiner() {
         <button class="google-login"><img src="https://users.premierleague.com/static/libsass/plusers/dist/img/svg/icon-google.svg" alt=""><p>Google</p></button>
         <button class="apple-login"><img src="https://users.premierleague.com/static/libsass/plusers/dist/img/svg/icon-apple.svg" alt=""><p>Apple</p></button>
     </div>
-</div>`
+</div>`;
 
-    return div
+  return div;
 }
-
-
-
 
 function siginIN() {
-    var registered_users = JSON.parse(localStorage.getItem('userArr'))
+  var registered_users = JSON.parse(localStorage.getItem("userArr"));
 
-    let login_btn = document.getElementById('sigin')
-    login_btn.addEventListener('click', function() {
-        var sigin_mail = document.getElementById('mail').value;
-        var signin_pass = document.getElementById('pass').value;
+  let login_btn = document.getElementById("sigin");
+  login_btn.addEventListener("click", function () {
+    var sigin_mail = document.getElementById("mail").value;
+    var signin_pass = document.getElementById("pass").value;
 
-        if (sigin_mail == '' || signin_pass == '') {
-            alert(`Please provide the email and password`)
-        }
+    if (sigin_mail == "" || signin_pass == "") {
+      alert(`Please provide the email and password`);
+    }
 
-        registered_users.forEach(el => {
-            var { email, password } = el
-            console.log(email, password)
-            if (sigin_mail == email && signin_pass == password) {
-                alert(`logged in`)
-            }
-        });
-    })
-    return login_btn
+    registered_users.forEach((el) => {
+      var { email, password } = el;
+      console.log(email, password);
+      if (sigin_mail == email && signin_pass == password) {
+        alert(`logged in`);
+        window.location.href = "index.html";
+      }
+    });
+  });
+  return login_btn;
 }
-
 
 function register() {
-    let btn = document.getElementById('register-btn')
-    btn.addEventListener('click', function() {
-        location.assign('registration.html')
-    })
-    return btn
+  let btn = document.getElementById("register-btn");
+  btn.addEventListener("click", function () {
+    location.assign("registration.html");
+  });
+  return btn;
 }
 
-
-export { register, siginIN, body_conatiner }
+export { register, siginIN, body_conatiner };
