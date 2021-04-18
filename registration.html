@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/header1.css">
+    <link rel="stylesheet" href="./css/registration.css">
+    <link rel="stylesheet" href="./css/favclub.css">
+    <link rel="stylesheet" href="./css/preferance.css">
+
+    <link rel="stylesheet" href="./css/footer.css">
+</head>
+
+<body>
+
+    <div id="header"></div>
+    <div id="header1"></div>
+
+
+
+
+    <div id="heading">
+        <h1>Creating a new account</h1>
+    </div>
+
+    <div id="flow">
+        <div id="before">
+            <div id="personal-1"><img id="img" src="https://image.flaticon.com/icons/png/128/4230/4230594.png" alt=""></div>
+            <div id="personal-2"><img id="img" src="https://t4.ftcdn.net/jpg/01/11/33/47/240_F_111334729_k7GzccfbcnqitdhZ2FxgnilOprXQeAmE.jpg" alt=""></div>
+
+            <div id="hrs1">
+                <hr>
+            </div>
+            <div id="fav-1"><img id="img" src="https://image.flaticon.com/icons/png/128/3237/3237398.png" alt=""></div>
+            <div id="fav-2"><img id="img" src="https://t4.ftcdn.net/jpg/01/11/33/47/240_F_111334729_k7GzccfbcnqitdhZ2FxgnilOprXQeAmE.jpg" alt=""></div>
+            <div id="hrs1">
+                <hr>
+            </div>
+            <div id="email-1"><img id="img" src="https://image.flaticon.com/icons/png/128/552/552486.png" alt=""></div>
+            <div id="email-2"><img id="img" src="https://t4.ftcdn.net/jpg/01/11/33/47/240_F_111334729_k7GzccfbcnqitdhZ2FxgnilOprXQeAmE.jpg" alt=""></div>
+        </div>
+    </div>
+
+    <div id="icon-about">
+        <p class="pz" style="padding-right: 80px; font-size: 14px;">1. Personal details</p>
+        <p class="pz" style="padding-right: 80px; font-size: 14px;">2. Your favourites</p>
+        <p style=" font-size: 14px;">3. Email preferences</p>
+    </div>
+
+    <hr id="hr1">
+
+    <div id="userPersonalDetail">
+        <h1 id="h1s">Your Personal Details</h1>
+
+        <div id="firstName">
+            <label>First Name <br> <span>*Required</span></label>
+            <input type="text" id="fn" placeholder="First Name">
+            <img id="right-mark" src="https://t4.ftcdn.net/jpg/01/11/33/47/240_F_111334729_k7GzccfbcnqitdhZ2FxgnilOprXQeAmE.jpg" alt="">
+            <img id="cross-mark" src="./cross.PNG" alt="">
+        </div>
+
+
+        <div id="firstName">
+            <label>Last Name <br> <span>*Required</span></label>
+            <input type="text" id="ln" placeholder="Last Name">
+            <img id="right-mark1" src="https://t4.ftcdn.net/jpg/01/11/33/47/240_F_111334729_k7GzccfbcnqitdhZ2FxgnilOprXQeAmE.jpg" alt="">
+            <img id="cross-mark1" src="./cross.PNG" alt="">
+        </div>
+
+        <div id="firstName">
+            <label>Email Address <br> <span>*Required</span></label>
+            <input type="email" id="email" placeholder="Email Address">
+            <img id="right-mark2" src="https://t4.ftcdn.net/jpg/01/11/33/47/240_F_111334729_k7GzccfbcnqitdhZ2FxgnilOprXQeAmE.jpg" alt="">
+            <img id="cross-mark2" src="./cross.PNG" alt="">
+        </div>
+        <div id="firstName">
+            <label>Password <br> <span>*Required</span></label>
+            <input type="password" id="password" placeholder="Password">
+            <span class="eye">
+            <button id="show-btn" onclick="showPassword()">show</button>
+        </span>
+
+            <img id="right-mark3" src="https://t4.ftcdn.net/jpg/01/11/33/47/240_F_111334729_k7GzccfbcnqitdhZ2FxgnilOprXQeAmE.jpg" alt="">
+            <img id="cross-mark3" src="./cross.PNG" alt="">
+        </div>
+
+        <div id="gender">
+            <label>Gender <br> <span>*Required</span></label>
+            <input style="float: left;" type="radio" name="gender" value="male" id="male"><span>Male</span>
+            <input style="float: left;" type="radio" name="gender" value="female" id="female"><span>Female</span>
+            <input style="float: left;" type="radio" name="gender" value="unspecified" id="unspecified"><span>Unspecified</span>
+            <img id="right-mark4" src="https://t4.ftcdn.net/jpg/01/11/33/47/240_F_111334729_k7GzccfbcnqitdhZ2FxgnilOprXQeAmE.jpg" alt="">
+            <img id="cross-mark4" src="./cross.PNG" alt="">
+        </div>
+        <div id="DOB">
+            <label>Date of Birth <br> <span>*Required</span></label>
+            <input type="date" name="" id="dob">
+            <img id="right-mark5" src="https://t4.ftcdn.net/jpg/01/11/33/47/240_F_111334729_k7GzccfbcnqitdhZ2FxgnilOprXQeAmE.jpg" alt="">
+            <img id="cross-mark5" src="./cross.PNG" alt="">
+        </div>
+
+
+        <div id="select-country">
+            <label for="">Mobile Number</label>
+            <input type="number" id="mobile">
+            <img id="right-mark8" src="https://t4.ftcdn.net/jpg/01/11/33/47/240_F_111334729_k7GzccfbcnqitdhZ2FxgnilOprXQeAmE.jpg" alt="">
+            <img id="cross-mark8" src="./cross.PNG" alt="">
+        </div>
+        <hr id="hr2">
+        <button id="next-btn1" onclick="register2()">Next</button>
+    </div>
+
+
+    <div id="favClub">
+        <div id="club-container">
+            <div id="div1"> <button value="Arsenal" id="btn"><img src="./img/img_icon1.png" alt=""><p>Arsenal</p> </button>
+
+            </div>
+            <div> <button value="Aston Villa" id="btn"><img src="./img/img_icon2.png" alt=""><p>Aston Villa</p></button>
+
+            </div>
+            <div> <button value="Brighton" id="btn"><img src="./img/img_icon3.png" alt=""><p>Brighton</p></button>
+
+            </div>
+            <div> <button value="Burnley" id="btn"><img src="./img/img_icon4.png" alt=""><p>Burnley</p></button>
+
+            </div>
+            <div> <button value="Chelsea" id="btn"><img src="./img/img_icon5.png" alt=""><p>Chelsea</p></button>
+
+            </div>
+            <div> <button value="Crystal Palace" id="btn"><img src="./img/img_icon6.png" alt=""><p>Crystal Palace</p></button>
+
+            </div>
+            <div> <button value="Fulham" id="btn"><img src="./img/img_icon7.png" alt=""><p>Everton</p></button>
+
+            </div>
+            <div> <button value="Fulham" id="btn"><img src="./img/img_icon8.png" alt=""><p>Fulham</p></button>
+
+            </div>
+            <div> <button value="Leeds" id="btn"><img src="./img/img_icon9.png" alt=""><p>Leeds</p></button>
+
+            </div>
+            <div> <button value="Leicester" id="btn"><img src="./img/img_icon10.png" alt=""><p>Leicester</p></button>
+
+            </div>
+            <div> <button value="Liverpool" id="btn"><img src="./img/img_icon11.png" alt=""><p>Liverpool</p></button>
+
+            </div>
+            <div> <button value="Man City" id="btn"><img src="./img/img_icon12.png" alt=""><p>Man City</p></button>
+
+            </div>
+            <div> <button value="Man Utd" id="btn"><img src="./img/img_icon13.png" alt=""><p>Man Utd</p></button>
+
+            </div>
+            <div> <button value="Newcastle" id="btn"><img src="./img/img_icon14.png" alt=""><p>Newcastle</p></button>
+
+            </div>
+            <div> <button value="Sheffield United" id="btn"><img src="./img/img_icon15.png" alt=""><p>Sheffield United</p></button>
+
+            </div>
+            <div> <button value="Spurs" id="btn"><img src="./img/img_icon17.png" alt=""><p>Spurs</p></button>
+
+            </div>
+            <div> <button value="West Bromwich Albion" id="btn"><img src="./img/img_icon18.png" alt=""><p>West Bromwich Albion</p></button>
+
+            </div>
+            <div> <button value="West Ham" id="btn"><img src="./img/img_icon19.png" alt=""><p>West Ham</p></button>
+
+            </div>
+            <div> <button value="Wolves" id="btn"><img src="./img/img_icon20.png" alt=""><p>Wolves</p></button>
+
+            </div>
+            <div> <button value="Southampton" id="btn" class="btn21"><img style="width: 60px;height: 60px;" src="data:image/png;base64,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" alt=""><p>Southampton</p></button>
+
+            </div>
+            <div> <button value="General PL Fan" id="btn" class="btn22"><img style="width: 60px;height: 60px;" src="./img/mainicons.png" alt=""><p>General PL Fan</p></button>
+
+            </div>
+
+        </div>
+        <hr class="hr">
+        <h2 id="h2">Do you want to keep an eye on other clubs?</h2>
+        <button id="sec_button" onclick="otherclub()">Select other clubs</button>
+
+        <hr class="hr" id="hide_hr">
+
+        <div id="otherclubs">
+            <div class="row1">
+                <input type="checkbox" name="otheclubs" class="checks" value="Arsenal"> <label for="">Arsenal</label>
+                <input type="checkbox" name="otheclubs" class="checks" value="Aston Vill" style="margin-left: 130px;"> <label for="">Aston Villa</label>
+                <input type="checkbox" name="otheclubs" class="checks" value="Brighton" style="margin-left: 130px;"> <label for="">Brighton</label>
+            </div>
+            <div class="row1">
+                <input type="checkbox" name="otheclubs" class="checks" value="Burnley"> <label for="">Burnley</label>
+                <input type="checkbox" name="otheclubs" class="checks" value="Chelsea" style="margin-left: 130px;"> <label for="">Chelsea</label>
+                <input type="checkbox" name="otheclubs" class="checks" value="Crystal Palace" style="margin-left: 147px;"> <label for="">Crystal Palace</label>
+            </div>
+            <div class="row1">
+                <input type="checkbox" name="otheclubs" class="checks" value="Everton"> <label for="">Everton</label>
+                <input type="checkbox" name="otheclubs" class="checks" value="Fulham" style="margin-left: 130px;"> <label for="">Fulham</label>
+                <input type="checkbox" name="otheclubs" class="checks" value="Leeds" style="margin-left: 150px;"> <label for="">Leeds</label>
+            </div>
+            <div class="row1">
+                <input type="checkbox" name="otheclubs" class="checks" value="Leicester"> <label for="">Leicester</label>
+                <input type="checkbox" name="otheclubs" class="checks" value="Liverpool" style="margin-left: 120px;"> <label for="">Liverpool</label>
+                <input type="checkbox" name="otheclubs" class="checks" value="Man City" style="margin-left: 140px;"> <label for="">Man City</label>
+            </div>
+            <div class="row1">
+                <input type="checkbox" name="otheclubs" class="checks" value="Man Utd"> <label for="">Man Utd</label>
+                <input type="checkbox" name="otheclubs" class="checks" value="Newcastle" style="margin-left: 125px;"> <label for="">Newcastle</label>
+                <input type="checkbox" name="otheclubs" class="checks" value="Sheffield United" style="margin-left: 130px;"> <label for="">Sheffield United</label>
+            </div>
+            <div class="row1">
+                <input type="checkbox" name="otheclubs" class="checks" value="Southampton"> <label for="">Southampton</label>
+                <input type="checkbox" name="otheclubs" class="checks" value="Spurs" style="margin-left: 93px;"> <label for="">Spurs</label>
+                <input type="checkbox" name="otheclubs" class="checks" value="West Bromwich Albion" style="margin-left: 160px;"> <label for="">West Bromwich Albion</label>
+            </div>
+            <div class="row1">
+                <input type="checkbox" name="otheclubs" class="checks" value="West Ham"> <label for="">West Ham</label>
+                <input type="checkbox" name="otheclubs" class="checks" value="Wolves" style="margin-left: 113px;"> <label for="">Wolves</label>
+            </div>
+        </div>
+
+        <hr class="hr">
+        <button id="sec_button" style="background:#e90052" onclick="next()">Next</button><br><br>
+        <button id="sec_button" style="background: rgb(182, 181, 181);" onclick="goBack()">Back to personal details</button>
+
+    </div>
+
+
+
+    <div id="fav_club">
+
+
+        <div id="information">
+            <h1>Premier League Email Communications</h1>
+            <p>Let us know if you would like the Premier League to send you information about any of the following topics</p>
+        </div>
+
+        <div id="rows">
+            <div><input type="checkbox" name="otheclubs" class="checks1" value="General communication"> <label for="">General communication</label></div>
+            <div><input type="checkbox" name="otheclubs" class="checks1" value="Fantasy"> <label for="">Fantasy</label></div>
+            <div> <input type="checkbox" name="otheclubs" class="checks1" value="Broadcast schedules"> <label for="">Broadcast schedules</label></div>
+        </div>
+        <div id="rows">
+            <div><input type="checkbox" name="otheclubs" class="checks1" value="Fixture changes"> <label for="">Fixture changes</label></div>
+            <div> <input type="checkbox" name="otheclubs" class="checks1" value="Communities" style="margin-left: -20px;"> <label for="">Communities</label>
+            </div>
+            <div></div>
+
+        </div>
+        <hr class="hr">
+
+        <div id="information">
+            <h1>Partner Email Communications</h1>
+            <p>Let us know if you would like the Premier League to send you information on behalf of the following official partners</p>
+        </div>
+        <div id="rows">
+            <div><input type="checkbox" name="otheclubs" class="checks2" value="Barclays"> <label for="">Barclays</label></div>
+            <div><input type="checkbox" name="otheclubs" class="checks2" value="Broadcasters"> <label for="">Broadcasters</label></div>
+            <div><input type="checkbox" name="otheclubs" class="checks2" value="Budweiser"> <label for="">Budweiser*</label></div>
+        </div>
+        <div id="rows">
+            <div><input type="checkbox" name="otheclubs" class="checks2" value="Coca-Cola"> <label for="">Coca-Cola</label></div>
+            <div> <input type="checkbox" name="otheclubs" class="checks2" value="Hublot" style="margin-left: -60px;"> <label for="">Hublot</label></div>
+            <div><input type="checkbox" name="otheclubs" class="checks2" value="Nike" style="margin-left: -23px;"> <label for="">Nike</label></div>
+
+        </div>
+        <div id="rows">
+            <div><input type="checkbox" name="otheclubs" class="checks2" value="EA SPORTS"> <label for="">EA SPORTS</label></div>
+            <div><input type="checkbox" name="otheclubs" class="checks2" value="Panini" style="margin-left: -25px;"> <label for="">Panini</label></div>
+            <div><input type="checkbox" name="otheclubs" class="checks2" value="Visit Britain" style="margin-left: 55px;"> <label for="">Visit Britain</label></div>
+
+        </div>
+
+
+
+        <p class="p1">*You will only receive emails about Budweiser if you’re over the legal drinking age in the country of your residence.</p>
+
+        <hr class="hr">
+        <p class="p1">
+            Our Privacy Policy sets out why the Premier League collects data from you and how it will be processed. You can manage your email preferences and change the information we send to you at any time by accessing your account and clicking 'Update Profile'.
+            <br> <br> If you no longer wish to receive communications directly from the club(s) you support, you should contact the club(s) directly to inform them. More information on how to do this can be found on our Withdrawing consent from Clubs
+            page.
+        </p>
+        <hr id="hr5">
+
+        <div id="terms">
+            <input type="checkbox" name="" id="">
+            <p id="para">I have read and agree to the <a href="">Terms & Conditions</a></p>
+            </label>
+        </div>
+        <button id="sec_button1" onclick="complete()">Complete registration</button><br><br>
+        <button id="sec_button1" style="background: rgb(197, 196, 196);" onclick="goBack()">Back to personal details</button>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="footer"></div>
+
+    <script src="./javascript/registration.js">
+    </script>
+
+
+    <script type="module">
+        import { register, siginIN, body_conatiner } from "./javascript/register.js"; import headerIcon from "./javascript/header.js"; import headerSec from "./javascript/header1.js"; import footer from "./javascript/footer.js"; headerIcon(); headerSec(); footer()
+    </script>
+
+
+
+</body>
+
+</html>
