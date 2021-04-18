@@ -124,7 +124,7 @@ function headerSec() {
           <button style="margin-left: 350px" id="headbtn">
             <strong>No Room for Racism</strong>
           </button>
-          <button id="headbtn" style="margin-left:20px"><strong>Sign in</strong></button
+          <button id="headbtn" style="margin-left:20px"><strong><a href="register.html" style="text-decoration:none;color:white">Sign In</a></strong></button
           ><button
             type="submit"
             style="
