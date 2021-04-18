@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fiture</title>
+        <link rel="stylesheet" href="fixture.css">
+    </head>
+    <body>
+        <div>
+            <button onclick="first()" class="btn firstbtn" id="firstbtn">First Team</button>
+            <button onclick="pl12()" class="btn pl2btn" id="pl12btn">PL2</button>
+            <button onclick="u18()" class="btn u18btn" id="u18btn">U18</button>
+        </div>
+        <div id="first">
+            <div class="search-bar">
+                <div class="search1">
+                    <p>Filter By Competion</p>
+                    <select class="select_data">
+                        <option>All Competitions</option>
+                        <option>Premier League</option>
+                        <option>FA Cup</option>
+                        <option>EFL Cup</option>
+                        <option>UEFA Champions League</option>
+                        <option>UEFA Europa League</option>
+                    </select>
+                </div>
+                <div class="search2">
+                    <p>Filter By Club</p>
+                    <select class="select_data">
+                        <option>All Club</option>
+                        <option>Arsenal</option>
+                        <option>Aston Villa</option>
+                        <option>Brighton and Hove Albio</option>
+                        <option>Burnley</option>
+                        <option>Chelsea</option>
+                        <option>Crystal Palace</option>
+                        <option>Everton</option>
+                        <option>Fulham</option>
+                        <option>Leeds United</option>
+                    </select>
+                </div>
+                <div class="search3">
+                    <button id="resetbtn">Reset Filter</button>
+                </div>
+            </div>
+        </div>
+        <div id="pl2">
+            <div class="search-bar2">
+                <div class="search1">
+                    <p>Filter By Competion</p>
+                    <select class="select_data">
+                        <option selected>Premier League2 - Division 1</option>
+                        <option>Premier League2 - Division 2</option>
+                        <option>Premier League Cup</option>
+                        <option>Premier League International Cup</option>
+                        <option>Professional Development League</option>
+                        <option>EFL Trophy</option>
+                    </select>
+                </div>
+                <div class="search2">
+                    <p>Filter By Club</p>
+                    <select class="select_data">
+                        <option selected>All Club</option>
+                        <option>Arsenal</option>
+                        <option>Aston Villa</option>
+                        <option>Brighton and Hove Albio</option>
+                        <option>Burnley</option>
+                        <option>Chelsea</option>
+                        <option>Crystal Palace</option>
+                        <option>Everton</option>
+                        <option>Fulham</option>
+                        <option>Leeds United</option>
+                    </select>
+                </div>
+                <div class="search3">
+                    <button id="resetbtn">Reset Filter</button>
+                </div>
+            </div>
+        </div>
+        <div id="u18">
+            <div class="search-bar3">
+                <div class="search1">
+                    <p>Filter By Competion</p>
+                    <select class="select_data">
+                        <option selected>U18 Premier League</option>
+                        <option>U18 Professional Development League</option>
+                        <option>U18 Premier League Cup</option>
+                    </select>
+                </div>
+                <div class="search2">
+                    <p>Filter By Club</p>
+                    <select class="select_data" id="selected-data">
+                        <option selected>All Club</option>
+                        <option>Arsenal</option>
+                        <option>Aston Villa</option>
+                        <option>Brighton and Hove Albio</option>
+                        <option>Burnley</option>
+                        <option>Chelsea</option>
+                        <option>Crystal Palace</option>
+                        <option>Everton</option>
+                        <option>Fulham</option>
+                        <option>Leeds United</option>
+                    </select>
+                </div>
+                <div class="search3">
+                    <button id="resetbtn">Reset Filter</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="ad">
+            <div>
+                <img id="watch" src="./img/watch.png">
+            </div>
+            <div style=" margin-top: 30px;">
+                <p>HUBLOT</p>
+            <p>OFFICIAL TIMEKEEPER</p>
+            </div>
+            <div>
+                <p style="color: #A7A7A7; margin-top: 50px;">
+                    All times shown are your  </p>
+            </div>
+        </div>
+        <div id="show">
+            <div id="team1"></div>
+            <div id="team2"></div>
+            <div id="stdm"></div>
+            <div class="show_img" id="img-show">4
+                <!-- <img src="./img/disney.png" style="width: 60px;">
+                <img src="./img/selecthd.png" style="width: 80px;">
+                <img src="./img/right arrow.png" style="width:30px;"> -->
+            </div>
+        </div>
+    </body>
+</html>
+
+<script src="fixture.js">
+
+</script>
