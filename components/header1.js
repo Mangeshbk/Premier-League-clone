@@ -141,7 +141,7 @@ function headerSec() {
         <!--  -->
         <div id="head2">
           <button style="margin-left: 60px"><a href="index.html" style="text-decoration:none;color:#76766f">Home</a></button>
-          <button>Fixtures</button>
+          <button><a href="fixture.html" style="text-decoration:none;color:#76766f">Fixtures</a></button>
           <button>Results</button>
           <button><a href="tables.html" style="text-decoration:none;color:#76766f">Tables</a></button>
           <button>Transfers</button>
