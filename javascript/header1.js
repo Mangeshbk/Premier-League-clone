@@ -159,7 +159,6 @@ function headerSec() {
       </div>
     </div>
     `;
-
   return nav;
 }
 
