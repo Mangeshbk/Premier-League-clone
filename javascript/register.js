@@ -54,11 +54,11 @@ function siginIN() {
     }
 
     registered_users.forEach((el) => {
-      var { email, password } = el;
-      console.log(email, password);
+      var { email, password, first_name } = el;
+      console.log(email, password, first_name);
       if (sigin_mail == email && signin_pass == password) {
         alert(`logged in`);
-        window.location.href = "index.html";
+        window.location.href = "update.html";
       }
     });
   });
