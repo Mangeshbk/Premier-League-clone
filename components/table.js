@@ -150,6 +150,9 @@ function tableData() {
       displayScore.appendChild(div);
     }
   }
+
+  
+
   teams();
 
   return data;
@@ -157,3 +160,5 @@ function tableData() {
 
 document.getElementById("bodyContent").appendChild(tableData());
 export default tableData;
+
+

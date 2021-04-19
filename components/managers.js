@@ -33,7 +33,7 @@ function managersData() {
 </select></div>
    <div class="sort1">
           <label for=""><i>Filter by Clubs</i></label>
-      <select id="sort3">
+      <select id="sort3" onchange="managerClub()">
       <option name="AllMatchweeks" value="AllMatchweeks">All Clubs</option>
       <option name="Arsenal" value="Arsenal">Arsenal</option>
       <option name="Aston Villa" value="Aston Villa">Aston Villa</option>
@@ -65,35 +65,36 @@ function managersData() {
 
 `;
 
-  async function teams() {
+  async function managerClub(elem) {
     var res = await fetch("./Json data/manager.json");
     var data = await res.json();
-
-    // console.log(data);
 
     let { managers } = data;
     // console.log(managers);
 
     var displayData = document.getElementById("bodyContent");
 
-    var input = document.getElementById("inp").value;
-
-    document.getElementById("search").addEventListener("click", (e) => {
-      // var input = document.getElementById("inp").value;
-      // console.log(input);
+    // var input = document.getElementById("inp").value;
+    var club;
+    document.getElementById("sort3").addEventListener("change", function (e) {
+      club = e.target.value;
+      console.log(club);
     });
 
-    console.log(input);
     for (var i = 0; i < managers.length; i++) {
       // console.log(managers[i]);
 
+      // if (elem == managers[i].country) {
+      //   console.log(elem);
       var div = document.createElement("div");
       div.setAttribute("id", "managerDetails");
       div.innerHTML = `<label id="mlbl1">${managers[i].name}</label><label id="mlbl2"><img src="${managers[i].image}"/>${managers[i].country}</label><label id="mlbl3"><img src="${managers[i].flag}"/>${managers[i].nation}</label>`;
       displayData.appendChild(div);
+      // }
     }
   }
-  teams();
+
+  managerClub();
   return data;
 }
 
