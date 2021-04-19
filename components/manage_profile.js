@@ -1,3 +1,21 @@
+
+
+let userData = JSON.parse(localStorage.getItem('userArr')) 
+let user_first_name = JSON.parse(localStorage.getItem('current_user'))
+console.log(userData)
+
+
+for(let i = 0; i < userData.length; i++){
+    if(user_first_name==userData[i].first_name){
+        document.getElementById('first_name').value=userData[i].first_name
+        document.getElementById('last_name').value = userData[i].last_name
+        document.getElementById('email').value = userData[i].email;
+        document.getElementById('password').value = userData[i].password
+        // document.querySelector('input[name="gender"]:checked').value = userData[i].gender
+        document.getElementById('date').value = userData[i].date
+        document.getElementById('mobile').value = userData[i].mobile
+    }
+
 let userData = JSON.parse(localStorage.getItem("userArr"));
 let user_first_name = JSON.parse(localStorage.getItem("current_user"));
 console.log(user_first_name, userData);
@@ -12,12 +30,50 @@ for (let i = 0; i < userData.length; i++) {
     document.getElementById("date").value = userData[i].date;
     document.getElementById("mobile").value = userData[i].mobile;
   }
+
 }
 
 let btn_next = document.getElementById("btn_next");
 btn_next.addEventListener("click", validate);
 
 function validate() {
+
+   let new_first_name = document.getElementById('first_name').value;
+   let new_last_name = document.getElementById('last_name').value;
+   let new_email = document.getElementById('email').value;
+   let new_password = document.getElementById('password').value;
+   let new_gender = document.querySelector('input[name="gender"]:checked').value;
+   let new_date = document.getElementById('date').value;
+   let new_mobile = document.getElementById('mobile').value;
+
+
+
+    if (new_first_name == '' ||new_last_name == '' || new_email == '' || new_password == '' || new_gender == '' || new_date == '' || new_mobile == '') {
+        alert('Please Fill all the input box')
+    }
+   else {
+        userData.forEach(element => {
+           
+            if(user_first_name==element.first_name){
+               
+                element.first_name=new_first_name
+                element.last_name = new_last_name
+                element.email = new_email
+                element.password = new_password
+                element.gender = new_gender
+                element.date = new_date
+                element.mobile = new_mobile
+                
+            }
+            
+        });
+
+        //  document.getElementById('step-2').style.opacity='1.0'
+        localStorage.setItem('userArr', JSON.stringify(userData))
+        window.location.href = 'manage_profile_2.html'
+        
+   }
+
   let new_first_name = document.getElementById("first_name").value;
   let new_last_name = document.getElementById("last_name").value;
   let new_email = document.getElementById("email").value;
@@ -53,6 +109,7 @@ function validate() {
     localStorage.setItem("userArr", JSON.stringify(userData));
     window.location.href = "manage_profile_2.html";
   }
+
 }
 
 let first_name = document.getElementById("first_name");

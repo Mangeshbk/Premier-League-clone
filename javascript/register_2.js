@@ -33,6 +33,7 @@ function validate() {
         localStorage.setItem('current_user',JSON.stringify(email))
         userData.push(user)
         console.log(userData)
+        localStorage.setItem('current_user',JSON.stringify(first_name))
         localStorage.setItem('userArr', JSON.stringify(userData))
         //  document.getElementById('step-2').style.opacity='1.0'
         window.location.href = 'manage_profile.html'

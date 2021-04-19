@@ -1,8 +1,42 @@
 
-let userData = JSON.parse(localStorage.getItem('userArr')) 
 
-let user_email = JSON.parse(localStorage.getItem('current_user'))
-console.log(user_email , userData)
+
+
+let userData = JSON.parse(localStorage.getItem('userArr')) 
+let user_first_name = JSON.parse(localStorage.getItem('current_user'))
+console.log(user_first_name , userData)
+
+
+for(let i = 0; i < userData.length; i++){
+    
+        document.getElementById('first_name').value=userData[i].first_name
+        document.getElementById('last_name').value = userData[i].last_name
+        document.getElementById('email').value = userData[i].email;
+        document.getElementById('password').value = userData[i].password
+        // document.querySelector('input[name="gender"]:checked').value = userData[i].gender
+        document.getElementById('date').value = userData[i].date
+        document.getElementById('mobile').value = userData[i].mobile
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 let btn_next = document.getElementById('btn_next')
 btn_next.addEventListener('click', validate)

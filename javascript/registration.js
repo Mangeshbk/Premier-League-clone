@@ -88,7 +88,7 @@ btn_value.addEventListener("click", getValue);
 function getValue(e) {
   if (e.target != e.currentTarget) {
     var value = e.target.value;
-    alert(value);
+    // alert(value);
     e.target.style.background = "#e90052";
     e.target.style.color = "#white";
     users["fav_club"] = value;
@@ -139,7 +139,7 @@ function complete() {
 
   registered_user.push(users);
   localStorage.setItem("userArr", JSON.stringify(registered_user));
-  window.location.href = "register.html";
+  window.location.href = "manage_profile.html";
 }
 
 function otherclub() {
