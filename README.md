@@ -1,7 +1,7 @@
 # Premier-League-clone
 # Team-Quadrilateral
 Cloning of Premier League Website ("https://cloning-premierleague.netlify.app/")
-We are a team of 4 . We have tried to create a clone of a well knowned website call premier league 
+We are a team of 5 . We have tried to create a clone of a well knowned website call premier league 
 ## About the website.
 Premier League website is basically a popular website which is mainly known by scoccer player and their all deatils of luve matches and live scores which is genrated time to time in that website. And all the users can get updates of scoccer game through their website.
 ## Project
