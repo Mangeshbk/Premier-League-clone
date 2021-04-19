@@ -1,7 +1,7 @@
 
 let userData = JSON.parse(localStorage.getItem('userArr')) 
 let user_first_name = JSON.parse(localStorage.getItem('current_user'))
-console.log(user_first_name , userData)
+console.log(userData)
 
 
 for(let i = 0; i < userData.length; i++){
@@ -68,6 +68,7 @@ function validate() {
                 element.gender = new_gender
                 element.date = new_date
                 element.mobile = new_mobile
+                
             }
             
         });
