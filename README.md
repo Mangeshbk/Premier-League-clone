@@ -3,7 +3,9 @@
 
 # Team-Quadrilateral
 Cloning of Premier League Website ("https://cloning-premierleague.netlify.app/")
-We are a team of 5 . We have tried to create a clone of a well knowned website call premier league 
+We are a team of 5 . We have tried to create a clone of a well knowned website call premier league
+
+<a href="#"><img width="100%" height="auto" src="./img/Home_Page.png" height="175px"/></a>
 
 
 ## About the website.
@@ -13,7 +15,7 @@ Premier League website is basically a popular website which is mainly known by s
 
 ## Project
 **We tried to implement a few of these pages**
-* Landing Page/Index page - Mangesh Landge
+* Landing Page/Index page & tikets page - Mangesh Landge
 * Login/SignUp page - Uday Kumar & Anwar Shad
 * Header/Footer parts and tables.html & managers page - Harshit Sanas
 * Fixtures pages - Lokesh singh
