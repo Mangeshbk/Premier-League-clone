@@ -11,10 +11,10 @@ We are a team of 5 . We have tried to create a clone of a well knowned website c
 <a href="#"><img width="100%" height="auto" src="https://i.ibb.co/jkrcGd5/Screenshot-961.png" height="175px"/></a>
 
 
-<a href="#"><img width="100%" height="auto" src="https://i.ibb.co/wL98kHy/Screenshot-963.png" height="175px"/></a>
+<a href="#"><img width="100%" height="auto" src="https://i.ibb.co/QFnwCLD/Screenshot-964.png" height="175px"/></a>
 
 
-<a href="#"><img width="100%" height="auto" src="https://i.ibb.co/KwsfMB8/Screenshot-962.png" height="175px"/></a>
+<a href="#"><img width="100%" height="auto" src="https://i.ibb.co/WVWg3y7/Screenshot-965.png" height="175px"/></a>
 
 
 ## About the website.
