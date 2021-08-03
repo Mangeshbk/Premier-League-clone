@@ -8,6 +8,15 @@ We are a team of 5 . We have tried to create a clone of a well knowned website c
 <a href="#"><img width="100%" height="auto" src="./img/Home_Page.png" height="175px"/></a>
 
 
+<a href="#"><img width="100%" height="auto" src="https://i.ibb.co/jkrcGd5/Screenshot-961.png" height="175px"/></a>
+
+
+<a href="#"><img width="100%" height="auto" src="https://i.ibb.co/wL98kHy/Screenshot-963.png" height="175px"/></a>
+
+
+<a href="#"><img width="100%" height="auto" src="https://i.ibb.co/KwsfMB8/Screenshot-962.png" height="175px"/></a>
+
+
 ## About the website.
 Premier League website is basically a popular website which is mainly known by scoccer player and their all deatils of luve matches and live scores which is genrated time to time in that website. And all the users can get updates of scoccer game through their website.
 
